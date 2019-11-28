@@ -66,11 +66,11 @@ O B2B é um negócio entre empresas, ou seja, de uma empresa para outra empresa,
 
 O B2B tem três principais grupos de portais, que são eles:
 \begin{itemize}
-    \item \textbf{Portal para colaborador:} utilizado exclusivamente para comunicação interna de uma organização.
+    \item \textbf{Portal para colaborador:} utilizado exclusivamente para comunicação interna de uma organização;
     
     \item \textbf{Portal para parceiro:} usado com o intuito de comunicação entre a empresa e os parceiros de negócio para compartilhamento de informações;
     
-    \item \textbf{Portal para terceiro:} tem a finalidade de servir como intermediação entre compradores e vendedores para impulsionar o processo de negociação online.
+    \item \textbf{Portal para terceiro:} tem a finalidade de servir como intermediação entre compradores e vendedores para impulsionar o processo de negociação online;
     
 \end{itemize}
 
@@ -179,9 +179,9 @@ Essa obtenção de dados de preferência se divide em duas categorias: classific
 Segundo Pazzani e Billsus (2007), conforme citado por Nilashi et al. (\citeyear{Nilashi:2013}), a filtragem colaborativa tem as seguintes características:
 
 \begin{itemize}
-    \item Criação de perfil do usuário através das classificações de usuários nos itens.
-    \item Identificação de usuários com gostos parecidos que classificam itens de maneira semelhante para um usuário alvo usando alguma função de similaridade.
-    \item Recomendar um ou vários itens para o usuário alvo que os usuários com gostos parecidos preferiram.
+    \item Criação de perfil do usuário através das classificações de usuários nos itens;
+    \item Identificação de usuários com gostos parecidos que classificam itens de maneira semelhante para um usuário alvo usando alguma função de similaridade;
+    \item Recomendar um ou vários itens para o usuário alvo que os usuários com gostos parecidos preferiram;
 
 \end{itemize}
 
@@ -221,21 +221,21 @@ A escalabilidade aparece como o principal problema da abordagem, pois é necess�
 Para finalizar, como descrito por Pinela (\citeyear{Pinela:2017}), os pontos positivos do \textit{collaborative filtering} são:
 
 \begin{itemize}
-    \item Não depende do contexto do sistema.
+    \item Não depende do contexto do sistema;
     
-    \item Implementação simples.
+    \item Implementação simples;
     
-    \item É mais preciso comparado a outras técnicas.
+    \item É mais preciso comparado a outras técnicas;
 \end{itemize}
 
 Mas também há alguns pontos negativos a se levar em consideração, como:
 
 \begin{itemize}
-    \item A porcentagem de usuários que avaliam itens em um sistema é relativamente baixa.
+    \item A porcentagem de usuários que avaliam itens em um sistema é relativamente baixa;
     
-    \item Partida fria (\textit{cold start}): não irá ter muita informação de novos usuários para ser comparado com os outros usuários.
+    \item Partida fria (\textit{cold start}): não irá ter muita informação de novos usuários para ser comparado com os outros usuários;
     
-    \item Novo item: não haverá muitos dados sobre novos itens, dificultando a realização de uma classificação robusta.
+    \item Novo item: não haverá muitos dados sobre novos itens, dificultando a realização de uma classificação robusta;
 \end{itemize}
 
 \subsubsection{Filtragem baseada em conteúdo}
@@ -249,11 +249,11 @@ Esse perfil é dado como uma lista de pares de atributos e valores, na qual cada
 
 Esses atributos são divididos em três categorias:
 \begin{itemize}
-    \item \textbf{Explícito:} valores obtidos pelo próprio usuário.
+    \item \textbf{Explícito:} valores obtidos pelo próprio usuário;
 
-    \item \textbf{Implícito:} dados obtidos através das ações do usuário.
+    \item \textbf{Implícito:} dados obtidos através das ações do usuário;
 
-    \item \textbf{Existente:} informações coletadas a partir de outro serviço já existente.
+    \item \textbf{Existente:} informações coletadas a partir de outro serviço já existente;
 \end{itemize}
 
 Com esse comportamento de encontrar a similaridade com as características do item, essa abordagem evita a falha de recomendar itens novos no sistema, descrita anteriormente, existente na abordagem de \textit{collaborative filtering}. \cite{Luk:2019}.
@@ -280,19 +280,19 @@ Existem diversas pesquisas na área que demonstram o sucesso do uso da abordagem
 O autor descreve sete técnicas de hibridação utilizadas. São elas:
 
 \begin{itemize}
-    \item \textbf{\textit{Weighted}}: a pontuação de diferentes componentes de recomendação são combinados numericamente.
+    \item \textbf{\textit{Weighted}}: a pontuação de diferentes componentes de recomendação são combinados numericamente;
     
-    \item \textbf{\textit{Switching}}: o sistema escolhe entre componentes de recomendação, seleciona um e o aplica.
+    \item \textbf{\textit{Switching}}: o sistema escolhe entre componentes de recomendação, seleciona um e o aplica;
     
-    \item \textbf{\textit{Mixed}}: recomendações de diferentes recomendadores são apresentadas juntas.
+    \item \textbf{\textit{Mixed}}: recomendações de diferentes recomendadores são apresentadas juntas;
     
-    \item \textbf{\textit{Feature Combination}}: características derivadas de diferentes fontes de conhecimento são combinadas dadas a um único sistema de recomendação.
+    \item \textbf{\textit{Feature Combination}}: características derivadas de diferentes fontes de conhecimento são combinadas dadas a um único sistema de recomendação;
     
-    \item \textbf{\textit{Feature Augmentation}}:  uma técnica de recomendação é usada para computar uma ou um conjunto de características, que será parte da entrada de outra técnica.
+    \item \textbf{\textit{Feature Augmentation}}:  uma técnica de recomendação é usada para computar uma ou um conjunto de características, que será parte da entrada de outra técnica;
     
-    \item \textbf{\textit{Cascade}}: os recomendadores recebem prioridade estrita, com os de menor prioridade quebrando os laços na pontuação dos mais altos.
+    \item \textbf{\textit{Cascade}}: os recomendadores recebem prioridade estrita, com os de menor prioridade quebrando os laços na pontuação dos mais altos;
 
-    \item \textbf{\textit{Meta-level}}: uma técnica de recomendação é aplicada e gera alguma ordenação de um modelo que é a entrada de outro.
+    \item \textbf{\textit{Meta-level}}: uma técnica de recomendação é aplicada e gera alguma ordenação de um modelo que é a entrada de outro;
 
 \end{itemize}
 
@@ -358,18 +358,19 @@ Segundo Alpaydin (\citeyear{Alpaydin:2010:IML:1734076}) a aplicação de método
 Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) dizem ainda que muitas pessoas consideram \textit{data mining} como uma fase essencial do processo de descoberta de conhecimento. O processo é demonstrado na Figura \ref{fig:etapas_ml} que é uma sequência interativa de sete etapas existentes. Elas são descritas pelo autor como:
 
 \begin{itemize}
-    \item \textbf{\textit{Data cleaning} (Limpeza de Dados)}: Para remover dados inconsistentes.
+    \item \textbf{\textit{Data cleaning} (Limpeza de Dados)}: Para remover dados inconsistentes;
 
-    \item \textbf{\textit{Data integration} (Integração de Dados)}: Onde várias fontes de dados são combinadas.
+    \item \textbf{\textit{Data integration} (Integração de Dados)}: Onde várias fontes de dados são combinadas;
 
-    \item \textbf{\textit{Data selection} (Seleção de Dados)}: Onde os dados relevantes para a tarefa em análise são recuperados da base de dados.
+    \item \textbf{\textit{Data selection} (Seleção de Dados)}: Onde os dados relevantes para a tarefa em análise são recuperados da base de dados;
 
-    \item \textbf{\textit{Data transformation} (Transformação de Dados)}: Onde os dados são transformados e consolidados em formas apropriadas para mineração, executando operações de resumo ou agregação.
+    \item \textbf{\textit{Data transformation} (Transformação de Dados)}: Onde os dados são transformados e consolidados em formas apropriadas para mineração, executando operações de resumo ou agregação;
 
-    \item \textbf{\textit{Data mining} (Mineração de Dados)}: Um processo essencial em que métodos inteligentes são aplicados para extrair padrões.
-    \item \textbf{\textit{Pattern evaluation} (Avaliação de padrões)}: Identificar os padrões realmente interessantes que representam o conhecimento com base em medidas de interesse.
+    \item \textbf{\textit{Data mining} (Mineração de Dados)}: Um processo essencial em que métodos inteligentes são aplicados para extrair padrões;
 
-    \item \textbf{\textit{Knowledge presentation} (Apresentação de conhecimento)}: Onde as técnicas de visualização e representação de conhecimento são usadas para apresentar conhecimento extraído aos usuários.
+    \item \textbf{\textit{Pattern evaluation} (Avaliação de padrões)}: Identificar os padrões realmente interessantes que representam o conhecimento com base em medidas de interesse;
+
+    \item \textbf{\textit{Knowledge presentation} (Apresentação de conhecimento)}: Onde as técnicas de visualização e representação de conhecimento são usadas para apresentar conhecimento extraído aos usuários;
 
 \end{itemize}
 
