@@ -1,5 +1,5 @@
 \chapter{Proposta}
-
+\label{proposta}
 \section{Metodologia}
 
 \subsection{Metodologia de pesquisa}
@@ -14,7 +14,7 @@ Segundo Gil (\citeyear{gil:2002}), o objetivo de pesquisa se divide em três cat
     \item \textbf{Descritiva:} permite a descrição das características de algum determinado fenômeno ou um grupo 
     de seres vivos ou relação entre variáveis;
     
-    \item \textbf{Explicativa:} promove a identificação dos fatores que ocasionam ou ajudam para o acontecimento de determinado fenômeno;
+    \item \textbf{Explicativa:} promove a identificação dos fatores que ocasionam ou ajudam para o acontecimento de determinado fenômeno.
 
 \end{itemize}
 
@@ -32,7 +32,7 @@ De acordo com Freitas (\citeyear{de2013metodologia}), sobre a natureza da pesqui
 \begin{itemize}
     \item \textbf{Básica:} intuito de produzir novos conhecimentos úteis para o crescimento da ciência, sem ter uma previsão de aplicação prática daquilo;
 
-    \item \textbf{Aplicada:} também tem o objetivo de gerar novos conhecimentos, mas visado para a aplicação prática para a solução de problemas específicos da vida real;
+    \item \textbf{Aplicada:} também tem o objetivo de gerar novos conhecimentos, mas visado para a aplicação prática para a solução de problemas específicos da vida real.
 \end{itemize}
 
 Um dos procedimentos de pesquisa que existem é a pesquisa-ação, ela consiste em quando há um interesse coletivo para solucionar um determinado problema, no qual os pesquisadores e os participantes estão envolvidos nesse problema de forma cooperativa ou participativa, com o intuito de solucionar ou no mínimo esclarecer o problema da situação, aumentando o nível de conhecimento dos pesquisadores e dos participantes \cite{de2013metodologia}.
@@ -46,7 +46,7 @@ Segundo Thiollent (1997), citado por Costa, Politano e Pereira (\citeyear{Costa}
 
     \item \textbf{Execução da ação:} aplicação do planejamento da fase anterior com o auxílio de um roteiro;
 
-    \item \textbf{Avaliação da ação:} monitorar as ações implementadas para compreender se os resultados são os esperados;
+    \item \textbf{Avaliação da ação:} monitorar as ações implementadas para compreender se os resultados são os esperados.
 \end{itemize}
 
 Para este trabalho foi decidido aplicar como objetivo de pesquisa a categoria exploratória, pois como o conhecimento sobre sistema de recomendação não era compreendido ou era superficial, era necessário adquirir mais conhecimento sobre os devidos conceitos, assim sendo, houve um empenho maior em pesquisa bibliográfica para achar conteúdos da área e trabalhos semelhantes. Podendo sempre usar ela quando se deparar com algum conceito desconhecido a fim de entendê-lo melhor \cite{Moretti:2018}.
@@ -102,7 +102,7 @@ Cada tarefa do fluxo de atividades do TCC1 (figura \ref{fig:fluxo_atividade_tcc1
 
     \item \textbf{Revisar TCC1:} Revisar todos os tópicos da parte escrita do trabalho para verificar se é necessário alguma correção;
 
-    \item \textbf{Apresentar TCC1:} apresentação do tema para a banca examinadora na Universidade Brasília - campus FGA (Gama) com o intuito de aprimorar a proposta;
+    \item \textbf{Apresentar TCC1:} apresentação do tema para a banca examinadora na Universidade Brasília - campus FGA (Gama) com o intuito de aprimorar a proposta.
 
 \end{itemize}
 
@@ -124,7 +124,7 @@ Na figura \ref{fig:fluxo_atividade_tcc2} pode ser visto o fluxo de tarefas para 
     
     \item \textbf{Revisar TCC2:} verificar se os objetivos do trabalho foram cumpridos como um todo e revisar todos os tópicos da parte escrita da monografia;
 
-    \item \textbf{Apresentar TCC2:} apresentação da parte prática da monografia para a banca examinadora na Universidade Brasília - campus FGA (Gama);
+    \item \textbf{Apresentar TCC2:} apresentação da parte prática da monografia para a banca examinadora na Universidade Brasília - campus FGA (Gama).
     
 \end{itemize}
 
@@ -181,7 +181,7 @@ Para obter um conhecimento inicial sobre o projeto, foi levantado as seguintes \
     
     \item \textit{Technical stories}:
     \begin{itemize}
-        \item \textbf{FE02TS01 - Registrar ações do usuário no site:} eu, como desenvolvedor, desejo registrar as ações do usuário no site para poder predizer quais são os imóveis mais prováveis dele gostar;
+        \item \textbf{FE02TS01 - Registrar ações do usuário no site:} eu, como desenvolvedor, desejo registrar as ações do usuário no site para poder predizer quais são os imóveis mais prováveis dele gostar.
     \end{itemize}
 \end{itemize}
 
@@ -215,7 +215,7 @@ Quem irá desempenhar esse papel será o professor e orientador Vandor Rissoli, 
     
     \item \textbf{Desenvolver stories:} implementar e testar as histórias descritas no \textit{Sprint backlog} até a conclusão dela;
     
-    \item \textbf{\textit{Sprint review}:} verificar quais \textit{stories} foram realmente feitas e quais estão pendentes e se houve a necessidade de criar novas, seja \textit{user} ou \textit{technical stories};
+    \item \textbf{\textit{Sprint review}:} verificar quais \textit{stories} foram realmente feitas e quais estão pendentes e se houve a necessidade de criar novas, seja \textit{user} ou \textit{technical stories}.
 \end{itemize}
 
 \section{Cronograma}
@@ -370,7 +370,7 @@ Diminuindo ainda mais o nível de abstração da arquitetura, a figura \ref{fig:
 
 A arquitetura existente no sistema da Liva segue o estilo arquitetural Cliente-Servidor, com uma abordagem monolítica. Seu cliente é desenvolvido na linguagem javaScript e com o \textit{framework} React. Sua API na linguagem Ruby com suporte do \textit{framework} Ruby on Rails, integrado a um sistema gerenciador de banco de dados PostgreSQL.
 
-A fim de desenvolver um sistema como um serviço que possa ser utilizado pela Liva sem interferir diretamente em sua estrutura, será implantado uma arquitetura em que o sistema de recomendação a ser implementado é separado do restante do sistema, como demonstrado na Figura \ref{fig:sr_nivel2}, destacado em azul. O sistema é composto por um cliente que é representado pelos novos componentes de interface atribuídos ao \textit{front-end} da Liva. Esses componentes são: nova ferramenta de busca com o componente de importância para cada atributo (Figura \ref{fig:filtro_busca}), componente de crítica (Figura \ref{fig:prototipo_critico1}) e por fim o componente de recomendação, responsável por listar recomendações advindas do módulo de \textit{machine learning} (Figura \ref{fig:prototipo_recommender_system}). Eles se comunicarão através do protocolo HTTP com a API de recomendação e com a tecnologia Amazon Kineses, que transmitirá dados para o Redis em tempo real.
+A fim de desenvolver um sistema como um serviço que possa ser utilizado pela Liva sem interferir diretamente em sua estrutura, será implantado uma arquitetura em que o sistema de recomendação a ser implementado é separado do restante do sistema, como demonstrado na Figura \ref{fig:sr_nivel2}, destacado em azul. O sistema é composto por um cliente que é representado pelos novos componentes de interface atribuídos ao \textit{front-end} da Liva. Esses componentes são: nova ferramenta de busca com o componente de importância para cada atributo (Figura \ref{fig:filtro_busca}), componente de crítica (Figura \ref{fig:prototipo_critico1}) e por fim o componente de recomendação, responsável por listar recomendações advindas do módulo de \textit{machine learning} (Figura \ref{fig:prototipo_recommender_system}). Eles se comunicarão através do protocolo HTTP com a API de recomendação e com a tecnologia Amazon Kinesis, que transmitirá dados para o Redis em tempo real.
 
 A API de recomendação será desenvolvida em python com o \textit{framework} Django REST e se comunicará com outras três tecnologias: Redis, PostgreSQL e Amazon S3. A escolha dessa tecnologia foi feita pelo fato de que existem diversas bibliotecas e \textit{framework} desenvolvidos em python que dão suporte para suprir todos os requisitos do sistema a ser desenvolvido, como por exemplo, o XGboost, Scikit-Learn, Numpy, Pandas e o Pickle para solução do módulo de \textit{machine learning}, além do Django REST que possibilita o desenvolvimento de uma API REST.
 
@@ -386,7 +386,7 @@ O sistema de recomendação e todos os serviços que o envolvem serão implantad
 	
 \subsubsection{Nível 3}
 \label{nivel3}
-O sistema de recomendação a ser desenvolvido foi dividido em dois módulos. Cada módulo refere-se a um tipo diferente de solução para recomendar itens. Como apresentado anteriormente, o sistema recomendará propriedades para os usuários na página principal do site da Liva, no denominado \textit{feed}, baseado na ferramenta de busca, o Perfil de Busca, e as críticas feitas sobre as propriedades pelos usuários. Essa solução refere-se a técnica exemple-critiquing como apresentado em \ref{Critiquing-based}. A outra solução baseia-se na área de \textit{machine learning}, apresentada na seção \ref{machineLearning}, seguindo o modelo utilizado no site Suumo.jp \cite{Summo:2017}, mas adaptado ao contexto da Liva. Esse módulo diz a respeito das recomendações apresentadas na página de detalhes das propriedades.
+O sistema de recomendação a ser desenvolvido foi dividido em dois módulos. Cada módulo refere-se a um tipo diferente de solução para recomendar itens. Como apresentado anteriormente, o sistema recomendará propriedades para os usuários na página principal do site da Liva, no denominado \textit{feed}, baseado na ferramenta de busca, o Perfil de Busca, e as críticas feitas sobre as propriedades pelos usuários. Essa solução refere-se a técnica \textit{exemple-critiquing} como apresentado na seção \ref{SR}. A outra solução baseia-se na área de \textit{machine learning}, apresentada na seção \ref{machineLearning}, seguindo o modelo utilizado no site Suumo.jp \cite{Summo:2017}, mas adaptado ao contexto da Liva. Esse módulo diz a respeito das recomendações apresentadas na página de detalhes das propriedades.
 
 \subsection{Sistema de Recomendação Baseado em \textit{Machine Learning}}
 
@@ -400,7 +400,7 @@ Li et al. (\citeyear{Summo:2017}) demonstra que para seu contexto os registros d
     CVR=\frac{A}{B}
 \end{equation}
 
-No site Suumo.jp, pioneiro no uso de sistema de recomendações aplicado ao contexto de imóveis, foi primeiramente desenvolvido um modelo híbrido de \textit{collaborative filtering} com \textit{content-based}, descritos em \ref{Collaborativefiltering} e \ref{Contentbasedfiltering} respectivamente. Os resultados apresentaram uma melhora de 25\% na taxa de cliques em propriedades em geral. Em seguida, foi implementado um modelo incremental de \textit{collaborative filtering} restrito a algumas páginas para fazer uma comparação com o primeiro modelo. O segundo modelo produziu uma melhoria de 20\% no CVR. O problema desse tipo de abordagem é que, como já apresentado anteriormente, para que um item seja recomendado é preciso que muitas interações de usuários sejam feitas, ou seja, muitas visualizações, o que faz com que novas propriedades tenham menos chance de serem recomendadas. O recomendador baseado em \textit{machine learning} proposto ao final apresentou uma melhora de 250\% na performance. Esse resultado demonstra que mesmo as ações mais sutis podem refletir nas preferências de um usuário e têm um efeito positivo na previsão de suas necessidades.
+No site Suumo.jp, pioneiro no uso de sistema de recomendações aplicado ao contexto de imóveis, foi primeiramente desenvolvido um modelo híbrido de \textit{collaborative filtering} com \textit{content-based}, descritos na seção \ref{Collaborativefiltering} e \ref{Contentbasedfiltering} respectivamente. Os resultados apresentaram uma melhora de 25\% na taxa de cliques em propriedades em geral. Em seguida, foi implementado um modelo incremental de \textit{collaborative filtering} restrito a algumas páginas para fazer uma comparação com o primeiro modelo. O segundo modelo produziu uma melhoria de 20\% no CVR. O problema desse tipo de abordagem é que, como já apresentado anteriormente, para que um item seja recomendado é preciso que muitas interações de usuários sejam feitas, ou seja, muitas visualizações, o que faz com que novas propriedades tenham menos chance de serem recomendadas. O recomendador baseado em \textit{machine learning} proposto ao final apresentou uma melhora de 250\% na performance. Esse resultado demonstra que mesmo as ações mais sutis podem refletir nas preferências de um usuário e têm um efeito positivo na previsão de suas necessidades.
 
 \subsubsection{\textit{Design} do Modelo}
 
@@ -420,7 +420,7 @@ Baseado na arquitetura acima, primeiramente é passado via requisição o ID do 
 
     \item \textbf{Visualizações recentes em propriedades feitas pelo usuário (VU):} quando um usuário clica para visualizar os detalhes de uma propriedade. A cada clique é salvo um novo registro na tabela VIEW\_PROPERTY\_HISTORY. São salvos no máximo 100 registros dos últimos 3 meses para cada usuário. Esses registros são compostos de informações como preço, área, quantidade de quartos, dentre outras características de um imóvel;
 
-    \item \textbf{Propriedade candidata a recomendação (PC):} refere-se às características da propriedade candidata a recomendação como preço, área, quantidade de quartos, dentre outras características. As propriedades são mantidas na tabela PROPERTIES;
+    \item \textbf{Propriedade candidata a recomendação (PC):} refere-se às características da propriedade candidata a recomendação como preço, área, quantidade de quartos, dentre outras características. As propriedades são mantidas na tabela PROPERTIES.
 \end{itemize}
 
 Para a entrada do modelo de \textit{machine learning} existe um conjunto de {BU, VU, PC} e a saída é o score que reflete a probabilidade de CV, ou seja, a probabilidade de um usuário requisitar contato a um corretor de uma propriedade em específico.
@@ -446,19 +446,19 @@ Toda vez que um usuário alcança a página de detalhes de uma propriedade é re
 \caption[Exemplo \textit{dataset} de treino]{Exemplo \textit{dataset} de treino. Fonte: Autor}
 \end{table}
 
-Para o presente problema de classificação foi escolhido o modelo de \textit{Gradient Boosting Decision Tree} (GBDT), discutido em \ref{ensemble}. Como a característica do \textit{dataset} torna possível a existência de colunas com dados faltantes, é de grande importância a utilização de um método capaz de lidar com tal problema bem além de manter uma alta precisão. Por ser um modelo baseado em árvore de decisão, ele consegue lidar bem com atributos em seu valor bruto, o que é preferível em questões de manutenibilidade e performance pois não necessitará de pré-processamento. Além disso a tecnologia usada para o modelo lida naturalmente com dados faltantes. Segundo Synced (\citeyear{Synced:2017}) internamente, o XGBoost aprenderá automaticamente qual é a melhor direção a seguir quando um valor estiver faltando. Equivalentemente, isso pode ser visto como "aprender" automaticamente qual é o melhor valor de imputação para valores faltantes com base na minimização da perda do treinamento.
+Para o presente problema de classificação foi escolhido o modelo de \textit{Gradient Boosting Decision Tree} (GBDT), discutido na seção \ref{machineLearning}. Como a característica do \textit{dataset} torna possível a existência de colunas com dados faltantes, é de grande importância a utilização de um método capaz de lidar com tal problema bem além de manter uma alta precisão. Por ser um modelo baseado em árvore de decisão, ele consegue lidar bem com atributos em seu valor bruto, o que é preferível em questões de manutenibilidade e performance pois não necessitará de pré-processamento. Além disso a tecnologia usada para o modelo lida naturalmente com dados faltantes. Segundo Synced (\citeyear{Synced:2017}) internamente, o XGBoost aprenderá automaticamente qual é a melhor direção a seguir quando um valor estiver faltando. Equivalentemente, isso pode ser visto como "aprender" automaticamente qual é o melhor valor de imputação para valores faltantes com base na minimização da perda do treinamento.
 
 Os três tipos de variáveis apresentadas anteriormente, para entrada do modelo, são relacionadas a dois tipos matemáticos, numéricos e categóricos. Para os dados numéricos como preço ou quantidade de quartos, por exemplo, foi decidido manter seus valores em sua forma bruta, por questões de manutenibilidade e performance, para um processamento mais rápido. Para as variáveis categóricas, algumas colunas são excluídas, como o ID do usuário, que não é útil para a predição. A localidade será trocada pela sua latitude e longitude e o tipo de imóvel será trocado por variáveis fictícias binárias (0 e 1).
 
 No Suumo.jp, Li et al. (\citeyear{Summo:2017}) encontra uma distribuição de tuplas no \textit{dataset} de treino entre CV = 1 e CV = 0, para cada uma linha com CV = 1 são gerada dez com CV = 0. Em seu modelo é proposto dez CV = 0 para dez propriedades aleatórias a cada um CV = 1. Dado que no modelo proposto para esse projeto temos a interação de descarte de uma propriedade, foi decidido não utilizar essa proporção e aleatoriedade pois isso fere com a  realidade dos dados dentro do contexto.
 
-Li et al. (\citeyear{Summo:2017}) afirma que as variáveis categóricas devem ser tratadas em um modelo diferente das variáveis numéricas. Isso porque, como descrito em \ref{ensemble}, na construção da árvore de decisão como o algoritmo de ramificação se concentra na divisão de variáveis numéricas, a frequência de aparecimento de variáveis categóricas igualmente importantes para os usuários é relativamente reduzida, ou seja, as árvores de decisão vão favorecer as ramificações com variáveis numéricas. Dito isso Li et al. (\citeyear{Summo:2017}) propõe a separação de dois modelos, um somente com variáveis categóricas e o outro com numéricas. Para fazer a junção dos scores gerados ele propõe a utilização de uma função de soma linear.
+Li et al. (\citeyear{Summo:2017}) afirma que as variáveis categóricas devem ser tratadas em um modelo diferente das variáveis numéricas. Isso porque, como descrito anteriormente na seção \ref{machineLearning}, na construção da árvore de decisão como o algoritmo de ramificação se concentra na divisão de variáveis numéricas, a frequência de aparecimento de variáveis categóricas igualmente importantes para os usuários é relativamente reduzida, ou seja, as árvores de decisão vão favorecer as ramificações com variáveis numéricas. Dito isso Li et al. (\citeyear{Summo:2017}) propõe a separação de dois modelos, um somente com variáveis categóricas e o outro com numéricas. Para fazer a junçãhttps://pt.overleaf.com/project/5d707d197c21410001a0794bo dos scores gerados ele propõe a utilização de uma função de soma linear.
 
 Como há uma quantidade muito pequena de características categóricas para o modelo proposto, não será feito a partição entre categóricas e numéricas.
 
 \subsection{Sistema de recomendação baseado em crítica}
 
-Com o intuito de não alterar o que já foi proposto no site da Liva, que faz o uso de uma ferramenta de busca baseada em preferência (Perfil de Busca) para recomendar propriedades, e ainda deixar o sistema de recomendação mais robusto seguindo uma abordagem, decidiu-se construir um sistema de recomendação baseado em crítica como descrito em \ref{Critiquing-based} seguindo a abordagem \textit{example critiquing}.
+Com o intuito de não alterar o que já foi proposto no site da Liva, que faz o uso de uma ferramenta de busca baseada em preferência (Perfil de Busca) para recomendar propriedades, e ainda deixar o sistema de recomendação mais robusto seguindo uma abordagem, decidiu-se construir um sistema de recomendação baseado em crítica como descrito na seção \ref{Critiquing-based} seguindo a abordagem \textit{example critiquing}.
 	
 Segundo Burke, Felfernig e Goker (\citeyear{Burke}), e como já dito anteriormente, as abordagens tradicionais de recomendação, filtragem colaborativa e baseada em conteúdo, não são adequadas em situações de itens de alto valor, como propriedades ou veículos, que não são comprados com frequência. A abordagem baseada em conhecimento pode mitigar esse problema explorando requisitos explícitos do usuário, mas ela sofre de gargalos de aquisição de conhecimento associados aos esforços iniciais necessários para gerar o conhecimento do domínio.
 
@@ -481,7 +481,7 @@ Após o usuário ter definido seu modelo de preferência inicial o sistema é ca
 
 O usuário irá apresentar suas preferências através do Perfil de Busca como na Figura \ref{fig:filtro_busca}. São comportados os seguintes atributos das propriedades: tipo de imóvel, faixa de preço, área, localização (Cidade e Bairro), quantidade de quartos, quantidade de suítes e quantidade de vagas na garagem. Além disso usuário seleciona a importância de cada atributo (peso de 1 a 5). O usuário irá criticar as propriedades de acordo com a Figura \ref{fig:prototipo_critico1}, em que ele pode postar críticas para a solução próxima, com as escolhas de manter ou melhorar algum atributo.
 
-Como já demonstrado em \ref{Critiquing-based}, o modelo de preferência será baseado no MAUT (teoria da utilidade de atributos múltiplos) em que será computado a utilidade para cada propriedade e assim ordenadas e apresentadas.
+Como já demonstrado na seção \ref{Critiquing-based}, o modelo de preferência será baseado no MAUT (teoria da utilidade de atributos múltiplos) em que será computado a utilidade para cada propriedade e assim ordenadas e apresentadas.
 
 Segundo Viappiani et al. (\citeyear{Viappiani}) no \textit{example critiquing}, cada crítica pode ser considerada como uma restrição leve, e o modelo de preferência pode ser desenvolvido simplesmente coletando críticas incrementalmente. Uma restrição leve é uma função de um atributo ou uma combinação de atributos para um número que indica o grau em que a restrição é violada.
 
@@ -654,7 +654,7 @@ Ele dá a possibilidade do usuário escolher os recursos que deseja para rodar d
 
 \subsection{Amazon Kinesis}
 
-O Amazon Kinesis é um serviço que serve para coleta e processamento grandes quantidades de dados em tempo real (\textit{streaming}). O Kinesis pode ser executado em instâncias do Amazon EC2 com a biblioteca Kinesis Client. Essa tecnologia possibilita enviar os dados processados para vários outros serviços AWS \cite{KINESIS:2019}.
+O Amazon Kinesis é um serviço que serve para coleta, análise e transmissão (\textit{streaming}) de grandes quantidades de dados em tempo real. O Kinesis pode ser executado em instâncias do Amazon EC2 com a biblioteca Kinesis Client. Essa tecnologia possibilita enviar os dados processados para vários outros serviços AWS \cite{KINESIS:2019}.
 
 \subsection{Amazon S3}
 
@@ -684,7 +684,7 @@ O Overleaf tem o objetivo de resolver os problemas ao escrever em Látex, ou sej
 
 \section{Simulação}
 
-Com o fim de validar a aplicabilidade da proposta, foi desenvolvido um protótipo da solução proposta. Para o desenvolvimento desse protótipo, como a solução se baseia em duas abordagens diferentes (módulo de critica e módulo de \textit{machine learning}), foi decidido fazer a implementação das duas de forma reduzida e minimalista. De forma geral, para o recomendador baseado em critica, é disponibilizado para o usuário uma pergunta que servirá para criticar apenas uma característica do imóvel, como apresentado nas Figuras \ref{fig:prototipo_simulacao_critica1}, \ref{fig:prototipo_simulacao_critica2} e \ref{fig:prototipo_simulacao_critica3}.
+Com o fim de validar a aplicabilidade da proposta, foi desenvolvido um protótipo (Apêndice \ref{apendice}) da solução proposta. Para o desenvolvimento desse protótipo, como a solução se baseia em duas abordagens diferentes (módulo de critica e módulo de \textit{machine learning}), foi decidido fazer a implementação das duas de forma reduzida e minimalista. De forma geral, para o recomendador baseado em critica, é disponibilizado para o usuário uma pergunta que servirá para criticar apenas uma característica do imóvel, como apresentado nas Figuras \ref{fig:prototipo_simulacao_critica1}, \ref{fig:prototipo_simulacao_critica2} e \ref{fig:prototipo_simulacao_critica3}.
 
 
 \begin{figure}[H]
@@ -712,7 +712,7 @@ Dessa forma o usuário selecionará uma das características e atribuirá o valo
 
 No recomendador de \textit{machine learning} foi decidido a construção de um \textit{collaborative filtering} baseado em modelo, utilizando-se da técnica de fatoração matricial, com o algoritmo de \textit{machine learning} \textit{Non-negative matrix factorization} (NMF) disponibilizado pela biblioteca sklearn. Para simular a integração do sistema de recomendação como um serviço, foi construída uma API própria para o protótipo. Seu \textit{deploy} foi feito por meio do serviço ECS do AWS, e tem um banco de dados próprio.Os dados de entrada do modelo foram retirados do banco de dados da Liva. Esses dados são referentes as ações de "Favoritar" e "Descartar" um imóvel feitas pelos usuários e foram copiados para o banco de dados da API.
 
-Os dados dos usuários serão atualizados assim como modelo será treinado diariamente. A transformação da matriz que terá todos os usuário e todos os imóveis "avaliados", disponibilizará um \textit{score} para cada propriedade. Dessa forma será possível recomendar para todos os usuários as cinco melhores propriedades geradas pelo algorítimo. Essas recomendações são apresentadas na página de detalhes do imóvel, assim como na solução proposta, e por meio de um componente carrossel do ReactJS chamado "\textit{swiper}" como na Figura \ref{fig:prototipo_simulacao_rs}.
+Os dados dos usuários serão atualizados assim como modelo será treinado diariamente. A transformação da matriz que terá todos os usuário e todos os imóveis "avaliados", disponibilizará um \textit{score} (pontuação) para cada propriedade. Dessa forma será possível recomendar para todos os usuários as cinco melhores propriedades geradas pelo algorítimo. Essas recomendações são apresentadas na página de detalhes do imóvel, assim como na solução proposta, e por meio de um componente carrossel do ReactJS chamado "\textit{swiper}" como na Figura \ref{fig:prototipo_simulacao_rs}.
 
 \begin{figure}[H]
     \centering

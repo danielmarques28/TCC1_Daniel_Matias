@@ -13,7 +13,7 @@ Segundo Ricci et al. (\citeyear{Ricci:2010}) há vários motivos para fornecedor
     \item Vender itens mais diversos;
     \item Aumentar a satisfação do cliente;
     \item Aumentar a fidelidade do usuário;
-    \item Melhor entendimento do que o usuário quer;
+    \item Melhor entendimento do que o usuário quer.
 \end{itemize}
 
 Existem diversas multinacionais que utilizam o mecanismo de recomendação em seus serviços, principalmente como forma de melhorar a interação do usuário e aumentar seu potencial financeiro. Isso vem crescendo aceleradamente de 4 a 5 anos, e há indícios que continue assim nos próximos anos \cite{Underwood:2017}.
@@ -37,25 +37,25 @@ sistema de recomendação baseado nos dados gerados nas pesquisas e navegações
 
 Buscando adotar uma abordagem semelhante, essa proposta procurará oferecer serviços diversos para imobiliárias, no qual um ambiente de \textit{e-commerce} personalizado possibilitará que os clientes dessas imobiliárias possam ter acesso e visualizar informações relativas aos diversos imóveis disponíveis para venda, agendar visitas, requisitar mais informações e verificar propriedades sobre aqueles imóveis que cada cliente tenha mais interesse.
 
-A Liva é uma \textit{startup} que oferece serviços no ramo imobiliário e colaborará neste projeto TCC. Seus criadores são donos de grandes imobiliárias e estão trabalhando nesse ramo a mais de 36 anos o que torna grande fator motivador para a elaboração desse projeto. 
+A Liva é uma \textit{startup} que oferece serviços no ramo imobiliário e colaborará neste projeto TCC. Seus criadores são donos de grandes imobiliárias e estão trabalhando nesse ramo a mais de 36 anos. Essa situação corresponde a um dos fatores motivacionais para a elaboração desse projeto.
 
-Um de seus principais serviços é a plataforma Liva.vc (Figura \ref{fig:pagina_principal_liva}), que oferece um \textit{e-commerce} de vendas de imóveis para clientes de diversas imobiliárias.
+Um dos principais serviços fornecidos pela Liva.vc corresponde ao \textit{e-commerce} de vendas de imóveis para clientes de diversas imobiliárias, sendo mostrado na Figura \ref{fig:pagina_principal_liva} uma das janelas de acesso a este ambiente virtual.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{figuras/introducao/pagina_principal_liva.png}
-    \caption[Página principal da plataforma Liva.vc]{Página principal da plataforma liva. Fonte: \cite{Liva:2019}}
+    \caption[Página principal da plataforma Liva.vc]{Página principal da plataforma Liva.vc. Fonte: \cite{Liva:2019}.}
     \label{fig:pagina_principal_liva}
 \end{figure}
 
 
-Esse tipo de serviço oferece um sistema de recomendação de propriedades baseado nas preferências de um cliente. Suas preferências são primeiramente geradas a partir de um \textit{lead}. Em termos gerais, \textit{leads} são clientes em potencial, ou seja, pessoas que demonstraram interesse por algum tipo de produto ou serviço, assim tornando-o um cliente interessado em algo oferecido por um negócio \cite{Agenciakaizen:2019}.
+Esse tipo de serviço oferece um sistema de recomendação de propriedades baseado nas preferências de cada cliente. Essas preferências são primeiramente geradas a partir de um \textit{lead}. Em termos gerais, essa expressão \textit{leads} corresponderia aos clientes em potencial, ou seja, pessoas que demonstraram interesse por algum tipo de produto ou serviço, assim tornando-o um cliente interessado em algo oferecido por um negócio \cite{Agenciakaizen:2019}.
 
-Com os \textit{leads} gerados das plataformas diariamente em grandes quantidades, diversos usuários são postos a se tornarem clientes em potencial no Liva.vc. Com dados advindos de interações de usuários com a plataforma, é possível extrair diversas informações úteis que possibilitam ainda mais refinar a preferencia do usuário.
+Com os \textit{leads} gerados das plataformas diariamente em grandes quantidades, diversos usuários são postos a se tornarem clientes em potencial no Liva.vc. Com dados advindos de interações de usuários com a plataforma, é possível extrair diversas informações úteis que possibilitam ainda mais refinar a preferência de cada usuário.
 
-O processo de Maneiração de Dados (\textit{Data Mining}), que é formado por diversas ferramentas e técnicas, possibilita a exploração de dados e sua extração, que ajudam a evidenciar padrões e dessa forma auxiliam na descoberta de conhecimento \cite{Han:2011:DMC:1972541}. Tal conhecimento pode ser usado para encontrar ótimos representantes da preferencia dos usuários.
+O processo de Mineração de Dados (\textit{Data Mining}), que é formado por diversas ferramentas e técnicas, possibilita a exploração de dados e sua extração, que ajudam a evidenciar padrões e dessa forma auxiliam na descoberta de conhecimento \cite{Han:2011:DMC:1972541}. Tal conhecimento pode ser usado para encontrar ótimos representantes da preferência dos usuários.
 
-Os Sistemas de Recomendação correspondem a uma subárea do Aprendizado de Máquina (\textit{Machine Learning}), um campo da Ciência da Computação que consiste na investigação de como computadores podem aprender a partir de dados já armazenados. Sua principal área de pesquisa é em cima da aprendizagem automática de computadores, reconhecendo padrões complexos e fazendo decisões inteligentes baseadas nos dados. De maneira mais ampla, os métodos e técnicas empregadas nesse tipo de processamento são provenientes da Inteligência Artificial, estando neste caso em particular compreendendo o Aprendizado de Máquina e a Mineração de Dados \cite{Han:2011:DMC:1972541}.
+Os Sistemas de Recomendação correspondem a uma subárea do Aprendizado de Máquina (\textit{Machine Learning}), um campo da Ciência da Computação que consiste na investigação de como computadores podem aprender a partir de dados já armazenados. Sua principal área de pesquisa é em cima da aprendizagem automática de computadores, reconhecendo padrões complexos e tomando decisões inteligentes baseadas nos dados. De maneira mais ampla, os métodos e técnicas empregadas nesse tipo de processamento são provenientes da Inteligência Artificial, estando neste caso em particular compreendendo o Aprendizado de Máquina e a Mineração de Dados \cite{Han:2011:DMC:1972541}.
 
 \section{Objetivos}
 
@@ -70,14 +70,14 @@ Esse trabalho tem como propósito criar um sistema robusto de recomendação par
     \item Implementar e implantar um protótipo seguindo abordagens de recomendação na plataforma Liva.vc, como uma simulação, a fim de provar a viabilidade do projeto;
     \item Implementar um recomendador com abordagem baseada em Aprendizado de máquina, utilizando-se de dados advindos de ações do usuário na plataforma;
     \item Implementar um recomendador com abordagem baseada em critica, com o uso e evolução da ferramenta de busca já existente na plataforma;
-    \item Analisar por meio de métricas de qualidade os resultados finais, com base nos dados gerados da implantação do novo sistema de recomendação na plataforma Liva.vc;
+    \item Analisar por meio de métricas de qualidade os resultados finais, com base nos dados gerados da implantação do novo sistema de recomendação na plataforma Liva.vc.
 \end{itemize}
 
 \section{Questões de Pesquisa}
 
 Com o intuito de obter os conhecimentos necessários para realização da implementação desse projeto, será pesquisado a resposta para a seguinte questão:
 \begin{itemize}
-    \item Como pode ser feito um sistema de recomendação robusto para um site \textit{e-commerce} focado em venda de imóveis, utilizando-se de dados, implícitos ou explícitos, referente a preferência dos clientes, e das propriedades e suas características, com abordagens e tecnologias conhecidas?;
+    \item Como pode ser feito um sistema de recomendação robusto para um site (sítio virtual) \textit{e-commerce} focado em venda de imóveis, utilizando-se de dados, implícitos ou explícitos, referente a preferência dos clientes, e das propriedades e suas características, com abordagens e tecnologias conhecidas?
 \end{itemize}
 
 Como já explicitado, existem diversas empresas de prestação de serviços e vendas online que utilizam de sistemas de recomendações, implementados baseados em técnicas e tecnologias modernas, que em sua maioria são muito importantes por proporcionar recomendações relevantes de seus produtos para seus clientes, de forma a ser muito benéfico para o negócio. 
@@ -106,7 +106,7 @@ Este trabalho de conclusão de curso está estruturado em seis capítulos. Segue
 
     \item \textbf{Capítulo 2 - Referencial teórico:} relata os conceitos pesquisados que deverão ser entendidos para ser possível implementar a proposta deste trabalho, um sistema robusto de recomendação de imóveis para a plataforma Liva.vc;
     
-   \item \textbf{Capítulo 3 - Proposta:} explica em detalhes a proposta deste trabalho para atender os objetivos descritos, contemplando, as técnicas e tecnologias a serem utilizadas, arquitetura, metodologia de pesquisa e a metodologia de desenvolvimento do software que foram e serão seguidos, além de apresentar o cronograma do trabalho;
+   \item \textbf{Capítulo 3 - Proposta:} explica em detalhes a proposta deste trabalho para atender os objetivos descritos, contemplando, as técnicas e tecnologias a serem utilizadas, arquitetura, metodologias que foram e serão seguidos junto com o cronograma do trabalho e a simulação de viabilidade realizada, sendo apresentado os resultados atingidos até o momento;
    
-   \item \textbf{Capítulo 4 - Considerações finais:} mostra os resultados atingidos até o momento, e os resultados esperados para fase prática do trabalho com base na fase teórica e em uma simulação de viabilidade realizada;
+   \item \textbf{Capítulo 4 - Considerações finais:} apresenta resultados esperados para fase prática do trabalho com base na fase teórica e na simulação de viabilidade realizada.
 \end{itemize}
