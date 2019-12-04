@@ -83,12 +83,12 @@ Com esse alto crescimento da internet junto com o crescimento do \textit{e-comme
 
 Sistemas de recomendação são aplicativos inteligentes que auxiliam usuários em suas tarefas de busca de informações, sugerindo itens que melhor atendam às suas necessidades e preferências \cite{Mahmood:2009:IRS:1557914.1557930}. Esse item descrito seria o termo geral usado para indicar o que o sistema recomenda aos usuários, podendo ser música, filme, série, dentre outros \cite{Ricci:2010}.
 
-Segundo Cimini (\citeyear{Cimini:2019}), sistemas de recomendação são tipos de algoritmos que usam do conhecimento de \textit{machine learning}, que atualmente está ganhando bastante popularidade em tecnologia da informação, com o objetivo de prever seus gostos, desejos e necessidades. Além disso, o sistema de recomendação é uma das principais aplicações de \textit{machine learning} nos últimos anos. O esquema do funcionamento em alto nível pode ser visto na figura \ref{fig:sr_arquitetura} e será explicado nas seções a seguir.
+Segundo Cimini (\citeyear{Cimini:2019}), sistemas de recomendação são tipos de algoritmos que usam do conhecimento de \textit{machine learning} (aprendizado de máquina) com o objetivo de prever os gostos, desejos e necessidades de seus usuários. Seu esquema de funcionamento pode ser visto em alto nível na Figura \ref{fig:sr_arquitetura}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.35]{figuras/referencial_teorico/sr_arquitetura.png}
-    \caption[Arquitetura do sistema de recomendação em alto nível]{Arquitetura do sistema de recomendação em alto nível. Fonte: \cite{Stefanos:2008} de livre tradução do autor.}
+    \caption[Arquitetura do sistema de recomendação em alto nível]{Arquitetura do sistema de recomendação em alto nível. Fonte: \cite{Stefanos:2008}. Traduzido.}
     \label{fig:sr_arquitetura}
 \end{figure}
 
@@ -99,7 +99,7 @@ Não é por que o produto não é altamente popular que ele não vai ter uma boa
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.35]{figuras/referencial_teorico/efeito_cauda.png}
-    \caption[Efeito Cauda Longa]{Efeito Cauda Longa. Fonte: \cite{pandey:2019} de livre tradução do autor.}
+    \caption[Efeito Cauda Longa]{Efeito Cauda Longa. Fonte: \cite{pandey:2019}. Traduzido.}
     \label{fig:efeito_cauda}
 \end{figure}
 
@@ -119,7 +119,7 @@ Ao final dos anos 90, os sistemas de recomendação começaram a emergir e serem
 
 Com a quantidade e variedade crescente de informações no ambiente virtual da Internet e produtos para comercialização, os sistemas de recomendações se tornaram um meio valioso para lidar com esse tipo de problema de sobrecarga de informações, promovendo escolhas eficientes e rápidas para os seus usuários \cite{Ricci:2010}.
 
-Segundo Ricci et al. (\citeyear{Ricci:2010}), o interesse por sistema de recomendação aumentou consideravelmente nos últimos anos e esse fato é visto por causa de  indicadores, como: \textit{sites} bem avaliados (Amazon.com, YouTube, Netflix, Yahoo, Tripadvisor, Last.fm, e IMDb) utilizarem de sistemas de recomendações e desempenharem um papel importante pro negócio, a existência de conferências e \textit{workshops} na área, o acolhimento desse tópico por instituições de ensino e a existência de pesquisas e desenvolvimento na área em revistas acadêmicas. Além disso, também ocorreu um grande marco, que seria a Netflix ter promovido de 2006 a 2009 o Netflix Prize, uma competição com o fim de premiar em 1 milhão de dólares a equipe que desenvolvesse o melhor algoritmo que melhorasse as recomendações de filmes para os usuários de sua plataforma de filmes e séries \cite{netflixprize:2009}.
+Segundo Ricci et al. (\citeyear{Ricci:2010}), o interesse por sistema de recomendação aumentou consideravelmente nos últimos anos e esse fato é visto por causa de  indicadores, como: \textit{sites} bem avaliados (Amazon.com, YouTube, Netflix, Yahoo, Tripadvisor, Last.fm, e IMDb) utilizarem de sistemas de recomendações e desempenharem um papel importante pro negócio, a existência de conferências e \textit{workshops} na área, o acolhimento desse tópico por instituições de ensino e a existência de pesquisas e desenvolvimento na área em revistas acadêmicas. Além disso, também ocorreu um grande marco, que seria a Netflix ter promovido de 2006 a 2009 o Netflix \textit{Prize}, uma competição com o fim de premiar em 1 milhão de dólares a equipe que desenvolvesse o melhor algoritmo que melhorasse as recomendações de filmes para os usuários de sua plataforma de filmes e séries \cite{netflixprize:2009}.
 
 \subsection{Funções de um sistema de recomendação}
 
@@ -127,99 +127,100 @@ Segundo Ricci et al. (\citeyear{Ricci:2010}), existem dois tipos de funções qu
 
 Esses autores ainda descrevem algumas razões para provedores de serviço investirem em sistemas de recomendação, sendo estas razões relacionadas a seguir:
 
-\textbf{Aumentar o número de itens vendidos}. Considerada a função mais importante para um sistema de recomendação comercial por gerar vendas adicionais comparadas as vendas advindas de um processo sem suporte de recomendações. Itens que são recomendados, em sua maioria, atendem as necessidades dos usuários, dessa forma cumprindo o objetivo do sistema de recomendação.
+\textbf{Aumentar o número de itens vendidos}: considerada a função mais importante para um sistema de recomendação comercial por gerar vendas adicionais comparadas as vendas advindas de um processo sem suporte de recomendações. Itens que são recomendados, em sua maioria, atendem as necessidades dos usuários, dessa forma cumprindo o objetivo do sistema de recomendação.
 
 Sistemas de recomendação não-comerciais apresentam também muitas vezes objetivos semelhantes, mesmo que não haja custo para o usuário, como por exemplo, sítios virtuais de notícias que desejam aumentar o número de notícias lidas por usuários.
 
 De forma geral, o principal objetivo de provedores de serviço em aplicar sistema de recomendação em seu negócio é aumentar a quantidade de usuários que aceitem as recomendações, fazendo comparação com a quantidade de usuários que navegam no sistema.
 
-\textbf{Vender itens mais diversos}. Também considerada uma função muito importante para um sistema de recomendação, que possibilita para o usuário recomendações de itens que podem ser difíceis de serem encontrados “manualmente” (sem apoio de sistemas de recomendação). O provedor do serviço quer que todos os seus itens sejam vendidos, não somente os mais populares, dessa forma o sistema de recomendação apresenta itens que se adéquam as preferências de cada usuário, e assim apresentam itens, podendo ser populares ou não, para o usuário certo.
+\textbf{Vender itens mais diversos}: também considerada uma função muito importante para um sistema de recomendação, que possibilita para o usuário recomendações de itens que podem ser difíceis de serem encontrados “manualmente” (sem apoio de sistemas de recomendação). O provedor do serviço quer que todos os seus itens sejam vendidos, não somente os mais populares, dessa forma o sistema de recomendação apresenta itens que se adéquam as preferências de cada usuário, e assim apresentam itens, podendo ser populares ou não, para o usuário certo.
 
-\textbf{Aumentar a satisfação do cliente}. Aumentar o satisfação do usuário em um sítio virtual ou aplicativo faz com que eles gostem do sistema, aumentando suas visitas e também a chance de aceitação de recomendações. Boas interfaces de interação com o usuário e recomendações interessantes e precisas são fatores relevantes na satisfação do cliente.
+\textbf{Aumentar a satisfação do cliente}: aumentar o satisfação do usuário em um sítio virtual ou aplicativo faz com que eles gostem do sistema, aumentando suas visitas e também a chance de aceitação de recomendações. Boas interfaces de interação com o usuário e recomendações interessantes e precisas são fatores relevantes na satisfação do cliente.
 
-\textbf{Aumentar a fidelidade do usuário}. Tratar clientes antigos como valiosos é muito importante, pois em sistemas de recomendação, muitas vezes, é utilizada as interações dos usuários antigos como base para o seu modelo de recomendação pela classificação dos itens disponíveis. Assim, quanto mais interações os usuários fizerem, dependendo do modelo utilizado, seu modelo será refinado e poderá atender melhor as preferências dos clientes.
+\textbf{Aumentar a fidelidade do usuário}: tratar clientes antigos como valiosos é muito importante, pois em sistemas de recomendação, muitas vezes, é utilizada as interações dos usuários antigos como base para o seu modelo de recomendação pela classificação dos itens disponíveis. Assim, quanto mais interações os usuários fizerem, dependendo do modelo utilizado, seu modelo será refinado e poderá atender melhor as preferências dos clientes.
 
-\textbf{Melhor entendimento do que o usuário quer}. Com as preferências dos usuários coletadas implícita ou explicitamente pelo sistema de recomendação, há a possibilidade de reutilização do conhecimento gerado por análises de dados, para outros objetivos, como melhorar o gerenciamento do estoque ou da produção do item. Um exemplo seria em plataformas de viagens recomendarem anúncios promocionais para determinado tipo de cliente baseado em sua preferência de lugares visitados.
+\textbf{Melhor entendimento do que o usuário quer}: com as preferências dos usuários coletadas implícita ou explicitamente pelo sistema de recomendação, há a possibilidade de reutilização do conhecimento gerado por análises de dados, para outros objetivos, como melhorar o gerenciamento do estoque ou da produção do item. Um exemplo seria em plataformas de viagens recomendarem anúncios promocionais para determinado tipo de cliente baseado em sua preferência de lugares visitados.
 
 O sistema de recomendação também desempenha várias funções referente ao usuário final. De acordo com Herlocker et al. (\citeyear{Herlocker:2004}), são elas:
 
-\textbf{Anotação no contexto}. O sistema de recomendação vai enfatizar itens baseado em um contexto. Por exemplo, na interface de navegação de TV a cabo, há a listagem dos programas que vão passar e o sistema de recomendação vai apresentar o que vale a pena ou não assistir \cite{Ricci:2010}.
+\textbf{Anotação no contexto}: o sistema de recomendação vai enfatizar itens baseado em um contexto. Por exemplo, na interface de navegação de TV a cabo, há a listagem dos programas que vão passar e o sistema de recomendação vai apresentar o que vale a pena ou não assistir \cite{Ricci:2010}.
 
-\textbf{Encontrar bons itens}. A principal tarefa de sistemas de recomendação é apresentar para o usuário uma lista específica e avaliada de itens, que são recomendações baseadas em previsões de quanto o usuário gostaria de tal item. Na maioria dos sistemas comerciais a probabilidade de recomendação gerada pelo modelo não é apresentada.
+\textbf{Encontrar bons itens}: a principal tarefa de sistemas de recomendação é apresentar para o usuário uma lista específica e avaliada de itens, que são recomendações baseadas em previsões de quanto o usuário gostaria de tal item. Na maioria dos sistemas comerciais a probabilidade de recomendação gerada pelo modelo não é apresentada.
 
-\textbf{Encontrar todos os itens bons}. A maioria dos sistemas de recomendação focam em recomendar somente alguns itens, mas existem casos que cabe apresentar todos os itens para um usuário. Um exemplo seria sistemas para recomendar casos para advogados que procuram precedentes, em que não se pode negligenciar um único caso. Para esse tipo de recomendação o número de falsos-negativos devem ser suficientemente baixos para ter uma excelente precisão no momento de recomendar os itens.
+\textbf{Encontrar todos os itens bons}: a maioria dos sistemas de recomendação focam em recomendar somente alguns itens, mas existem casos que cabe apresentar todos os itens para um usuário. Um exemplo seria sistemas para recomendar casos para advogados que procuram precedentes, em que não se pode negligenciar um único caso. Para esse tipo de recomendação o número de falsos-negativos devem ser suficientemente baixos para ter uma excelente precisão no momento de recomendar os itens.
 
-\textbf{Recomendar uma sequência}. Existem casos que são recomendados itens para o usuário mas em uma devida sequência que seja agradável ao mesmo. Como utilizado no sistema de recomendação do Yahoo \textit{Entertainment} (Entretenimento) na aba de musicas (launch.yahoo.com), que recomenda músicas para os usuários em uma devida sequência.
+\textbf{Recomendar uma sequência}: existem casos que são recomendados itens para o usuário mas em uma devida sequência que seja agradável ao mesmo. Como utilizado no sistema de recomendação do Yahoo \textit{Entertainment} (Entretenimento) na aba de musicas (launch.yahoo.com), que recomenda músicas para os usuários em uma devida sequência.
 
-\textbf{Recomendar um agrupamento}. Sistemas de recomendação também podem sugerir um grupo de itens que combinados seriam melhor aceitos. Por exemplo, em ambientes de viagens normalmente são recomendados com os destinos seus pontos turísticos, restaurantes, hotéis entre outras recomendações combinadas \cite{Ricci:2010}.
+\textbf{Recomendar um agrupamento}: sistemas de recomendação também podem sugerir um grupo de itens que combinados seriam melhor aceitos. Por exemplo, em ambientes de viagens normalmente são recomendados com os destinos seus pontos turísticos, restaurantes, hotéis entre outras recomendações combinadas \cite{Ricci:2010}.
 
-\textbf{Apenas navegar}: A principal função de um recomendador é ajudar o usuário a tomar uma decisão baseado em suas preferências, mas nem sempre é assim, existem muitos usuários que utilizam o sistema sem um objetivo eminente e navegam simplesmente porque acham agradável. Nesses casos a interface, facilidade de uso e a natureza das informações importam muito mais do que a precisão do recomendador.
+\textbf{Apenas navegar}: a principal função de um recomendador é ajudar ao seu usuário (cliente) a tomar uma decisão baseada em suas preferências, mas nem sempre é assim, existem muitos usuários que utilizam o sistema sem um objetivo eminente e navegam simplesmente porque acham agradável. Nesses casos a interface, facilidade de uso e a natureza das informações importam muito mais do que a precisão do recomendador.
 
-\textbf{Encontrar recomendações confiáveis}: É muito comum usuários não confiarem em recomendadores e é por isso que muitas vezes eles testam o recomendador, alterando seu perfil, por exemplo, para averiguar se o comportamento do recomendador está condizente com suas preferências. Por esse fato, muitos sistemas de recomendações oferecem esse tipo de funcionalidade que permitem usuários conseguirem testar o comportamento do recomendador.
+\textbf{Encontrar recomendações confiáveis}: é muito comum usuários não confiarem em recomendadores e é por isso que muitas vezes eles testam o recomendador, alterando seu perfil, por exemplo, para averiguar se o comportamento do recomendador está condizente com suas preferências. Por esse motivo, muitos sistemas de recomendação oferecem esse tipo de funcionalidade que permitem usuários conseguirem testar o comportamento do recomendador.
 
-\textbf{Melhorar o perfil}: Os usuários tendem a contribuir com avaliações nos sistemas com o intuito de melhorar seu perfil, e dessa forma melhorar a qualidade de recomendação recebida. É a função que a maioria dos sistemas de recomendação utiliza, e é primordial para a atribuição de recomendações personalizadas para os usuários.
+\textbf{Melhorar o perfil}: os usuários tendem a contribuir com avaliações nos sistemas com o intuito de melhorar seu perfil, e dessa forma aprimorar a qualidade da recomendação recebida. É a função que a maioria dos sistemas de recomendação utiliza, sendo primordial para a atribuição de recomendações personalizadas para clientes que são usuários desse tipo de sistema.
 
-\textbf{Expressar-se}: Alguns usuários não se importam com recomendações feitas para eles e sim em contribuir com suas avaliações, simplesmente pelo fato de se sentirem bem fazendo essa contribuição. Esse tipo de usuário normalmente avaliam anonimamente diversos itens e tem certa facilidade em fazer contribuições. Pode se dizer que é muito bom para o sistema fornecer mais dados e assim melhorar as recomendações para os outros usuários.
+\textbf{Expressar-se}: alguns usuários não se importam com recomendações feitas para eles e sim em contribuir com suas avaliações, simplesmente pelo fato de se sentirem bem fazendo essa contribuição. Esse tipo de usuário normalmente avaliam anonimamente diversos itens e tem certa facilidade em fazer contribuições. Pode-se dizer que é muito interessante para este tipo sistema fornecer mais dados e assim melhorar as recomendações para os outros usuários.
 
-\textbf{Ajudar outros}: Muitas vezes, os usuários tem o objetivo de contribuir com avaliações de itens para que melhore nas recomendações de outros usuários. Essa função em sua maioria está vinculada a função de expressar-se, mas nem sempre elas andam juntas.
+\textbf{Ajudar outros}: muitas vezes, os usuários tem o objetivo de contribuir com avaliações de itens para que melhore nas recomendações de outros usuários. Essa função, em sua maioria, está vinculada a função de \textbf{Expressar-se}, abordada no item anterior, mas nem sempre elas estão implementadas juntas.
 
-\textbf{Influenciar outros}: Considerado como um fator infeliz, alguns usuários têm a motivação de fazer avaliações de itens para influenciar declaradamente outros usuários na compra ou visualização dos itens. Um exemplo seria na situação em que usuários avaliam filmes antes mesmo deles serem lançados para fazer com que eles sejam recomendados,  e dessa forma influenciar as pessoas a assistirem.
+\textbf{Influenciar outros}: considerado como um fator infeliz, alguns usuários têm a motivação de fazer avaliações de itens para influenciar declaradamente outros usuários na compra ou visualização dos itens. Um exemplo seria na situação em que usuários avaliam filmes antes mesmo deles serem lançados para fazer com que eles sejam recomendados,  e dessa forma influenciar as pessoas a assistirem.
 
 \subsection{Abordagens de recomendações}
 
-Como dito por Beliakov et al. (\citeyear{Beliakov:2011}), as justificativas usadas por sistemas de recomendação para recomendar itens para usuários, vão depender de fatores específicos  das aplicações e da forma de como os dados são coletados nos sistemas. Dessa maneira várias abordagens vêm sendo utilizadas para desenvolver sistemas de recomendações.
+Como dito por Beliakov et al. (\citeyear{Beliakov:2011}), as justificativas usadas por sistemas de recomendação para recomendar itens para usuários, vão depender de fatores específicos das aplicações e da forma como os dados são coletados pelos sistemas. Dessa maneira várias abordagens vêm sendo utilizadas para desenvolver sistemas de recomendação.
 
 Nesta seção serão descritas as principais abordagens de recomendações, denominadas \textit{collaborative filtering} (filtragem colaborativa), \textit{content-based filtering} (filtragem baseada em conteúdo), \textit{knowledge-based recommender systems} (sistemas de recomendação baseados em conhecimento), \textit{hybrid recommender systems} (sistemas de recomendação híbridos) e \textit{critiquing-based recommender systems} (sistemas de recomendação baseados em críticas).
 
 \subsubsection{Filtragem Colaborativa} 
 \label{Collaborativefiltering}
-A ideia principal dessa técnica, também conhecida como filtragem colaborativa, é que as pessoas que concordaram no passado tendem a concordar no futuro, ou seja, é possível analisar o histórico de cada indivíduo para predizer qual item ele gostará também, precisando apenas do histórico de preferência de um conjunto de usuários do sistema \cite{Nilashi:2013}.
+A ideia principal dessa técnica consiste em que as pessoas que concordaram no passado tendem a concordar no futuro, ou seja, é possível analisar o histórico de cada indivíduo para predizer qual item ele gostará também, precisando apenas do histórico de preferência de um conjunto de usuários do sistema \cite{Nilashi:2013}.
 
-Essa obtenção de dados de preferência se divide em duas categorias: classificação explícita e a classificação implícita. A primeira é uma taxa de 0 a 5 atribuída pelo próprio usuário em algum item. Esse procedimento é o \textit{feedback} mais direto para se obter o dado de preferência, mas que nem sempre é advindo de uma grande quantidade de dados. O segundo infere os gostos do sujeito indiretamente através de ações no \textit{site}, como: quantidade de visualizações, cliques, registro de compras passadas, ter escutado ou não a alguma música e entre outros \cite{luo:2018}.
+Essa obtenção de dados de preferência se divide em duas categorias: classificação explícita e a classificação implícita. A primeira é uma taxa de 0 a 5 atribuída pelo próprio usuário em algum item. Esse procedimento é o \textit{feedback} mais direto para se obter o dado de preferência, mas que nem sempre é advindo de uma grande quantidade de dados. O segundo infere os gostos do sujeito indiretamente através de ações no site, como: quantidade de visualizações, cliques, registro de compras passadas, ter escutado ou não a alguma música e entre outros \cite{luo:2018}.
 	
 Segundo Pazzani e Billsus (2007), conforme citado por Nilashi et al. (\citeyear{Nilashi:2013}), a filtragem colaborativa tem as seguintes características:
 
 \begin{itemize}
     \item Criação de perfil do usuário através das classificações de usuários nos itens;
-    \item Identificação de usuários com gostos parecidos que classificam itens de maneira semelhante para um usuário alvo usando alguma função de similaridade;
-    \item Recomendar um ou vários itens para o usuário alvo que os usuários com gostos parecidos preferiram.
+    \item Identificação de usuários com gostos parecidos que classificam itens de maneira semelhante para um usuário alvo usando alguma função para apurar as possíveis similaridades;
+    \item Recomendar um ou vários itens para o usuário alvo que os usuários com gostos parecidos preferiram anteriormente.
 
 \end{itemize}
 
-Essa filtragem para realizar a recomendação necessita relacionar duas coisas: item e usuário. Para realizar a comparação entre essas duas entidades têm se duas principais técnicas: abordagem de vizinhança e o modelo de fatores latentes. Na relação item a item, a modelagem do perfil do usuário para um item é feita com base nas classificações do usuário em outros itens semelhantes \cite{Koren:2015}.
+Essa filtragem para realizar a recomendação necessita relacionar dois itens importantes para os sistemas de recomendação sendo eles os itens e os usuários. Para realizar a comparação entre esses dois itens ou entidades relevantes para este tipo de sistema tem-se duas principais técnicas: abordagem de vizinhança e o modelo de fatores latentes. Na relação item a item, a modelagem do perfil do usuário para um item é feita com base nas classificações do usuário em outros itens semelhantes \cite{Koren:2015}.
 
 Os métodos para detecção dessa semelhança se divide em dois tipos: o \textit{memory-based} (baseado em memória) e o \textit{model-based} (baseado em modelo). A seguir, serão detalhadas as duas categorias.
 
 %\subsubsection{Baseado em memória}
 
-\textbf{Baseado em memória}. Esse tipo tem como característica calcular as semelhanças entre vizinhos na memória do computador. Os dados de entrada são carregados um passo antes do cálculo de detecção e assim são utilizados para fornecer a recomendação \cite{Levinas2014AnAO}. Essa categoria se divide em dois métodos: \textit{User-based filtering} (filtragem baseada em usuários) e \textit{Item-based filtering} (filtragem baseado em itens).
+\begin{itemize}
+    \item \textbf{Baseado em memória}: esse tipo tem como característica calcular as semelhanças entre vizinhos na memória do computador. Os dados de entrada são carregados um passo antes do cálculo de detecção e assim são utilizados para fornecer a recomendação \cite{Levinas2014AnAO}. Essa categoria se divide em dois métodos: \textit{User-based filtering} (filtragem baseada em usuários) e \textit{Item-based filtering} (filtragem baseado em itens). 
+    \begin{itemize}
+        \item \textbf{Filtragem baseada em usuários}: usuários com gostos parecidos irão realizar classificações semelhantes nos mesmos itens, por isso, é certo dizer que as classificações obtidas de outros usuários com a mesma opinião do usuário alvo, pode ser usada para recomendar o usuário alvo \cite{Cimini:2019}.
+        \item \textbf{Filtragem baseada em itens}: itens parecidos foram classificados de forma bem semelhante pelo mesmo usuário. Para predizer as classificações para um item alvo B pelo usuário A, deve-se primeiro determinar um conjunto de itens que sejam semelhantes ao item alvo B, assim, as classificações desse conjunto serão usadas para prever se o usuário A irá gostar do item B \cite{Cimini:2019}.
+    \end{itemize}
+         
+\end{itemize}
 
-%\subsubsection{User-based filtering}
+Em outras palavras, ao invés de utilizar a semelhança de comportamentos das classificações dos usuários para recomendar, será usada a semelhança entre os padrões de classificação dos itens. Se um grupo de itens tendem a ter os mesmos usuários que gostam e que não gostam, então seria certo dizer que eles são semelhantes \cite{Ekstrand:2011:CFR:2185827.2185828}.
 
-\textbf{Filtragem baseada em usuários}. Usuários com gostos parecidos irão realizar classificações semelhantes nos mesmos itens, por isso, é certo dizer que as classificações obtidas de outros usuários com a mesma opinião do usuário alvo, pode ser usada para recomendar o usuário alvo \cite{Cimini:2019}.
-
-%\subsubsection{Item-based filtering}
-
-\textbf{Filtragem baseada em itens}. Itens parecidos foram classificados de forma bem semelhante pelo mesmo usuário. Para predizer as classificações para um item alvo B pelo usuário A, deve-se primeiro determinar um conjunto de itens que sejam semelhantes ao item alvo B, assim, as classificações desse conjunto serão usadas para prever se o usuário A irá gostar do item B \cite{Cimini:2019}.
-
-Em outras palavras, ao invés de utilizar a semelhança de comportamentos das classificações dos usuários para recomendar, será usado a semelhança entre os padrões de classificação dos itens. Se um grupo de itens tendem a ter os mesmos usuários que gostam e que não gostam, então é certo dizer que eles são semelhantes \cite{Ekstrand:2011:CFR:2185827.2185828}.
-
-O item-item ou \textit{item-based} (baseado em itens) foi criado com a ideia de corrigir a característica de má escalabilidade do \textit{user-based}, mas na prática acaba que não corrige totalmente. Ambos as abordagens necessitam achar a similaridade seja de usuário, seja de item, mas como na maioria dos sistemas há mais usuários do que itens, assim é mais econômico encontrar a similaridade pelo item do que pelo usuário \cite{Ekstrand:2011:CFR:2185827.2185828}.
+O item-item ou \textit{item-based} (baseada nos itens) foi criado com a ideia de corrigir a característica de má escalabilidade do \textit{user-based} (baseada nos usuários), mas na prática acaba que não corrige totalmente. As duas abordagens necessitam achar a similaridade, seja de usuário ou seja de item, mas como na maioria dos sistemas há mais usuários do que itens, assim é mais econômico encontrar a similaridade pelo item do que pelo usuário \cite{Ekstrand:2011:CFR:2185827.2185828}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.4]{figuras/referencial_teorico/user_based_item_based.jpg}
-    \caption[User-based filtering e Item-based filtering]{User-based filtering e Item-based filtering. Fonte: \cite{Pinela:2017}}
+    \includegraphics[scale=0.4]{figuras/referencial_teorico/user_based_item_based.png}
+    \caption[Filtragem baseada nos usuários e filtragem baseada nos itens]{Filtragem baseada nos usuários e filtragem baseada nos itens. Fonte: \cite{Pinela:2017}. Traduzido.}
     \label{fig:user_based_item_based}
 \end{figure}
 
 %\subsubsection{Baseado em modelo}
 
-\textbf{Baseado em modelos}. Diferente do \textit{memory-based}, a categoria \textit{model-based} extrai informações de um conjunto de dados para criar um “modelo” que é utilizado calcular as recomendações. Geralmente é produzido um modelo \textit{offline} ao mesmo tempo que a recomendação acontece online. Foi graças ao Netflix \textit{Prize} que essa categoria recebeu um grande investimento nas comunidades de pesquisa \cite{Levinas2014AnAO}.
+\begin{itemize}
+    \item \textbf{Baseado em modelo}: diferente do tipo Baseado em memória, essa \textit{model-based} extrai informações de um conjunto de dados para criar um “modelo” que é utilizado para calcular as recomendações. Geralmente é produzido um modelo \textit{offline} ao mesmo tempo que a recomendação acontece online. Foi graças ao Netflix \textit{Prize} que essa categoria recebeu um investimento expressivo nas comunidades de pesquisa \cite{Levinas2014AnAO}.
+\end{itemize}
 
-A escalabilidade aparece como o principal problema da abordagem, pois é necessário carregar uma grande quantidade de dados em memória no servidor para poder assim realizar a recomendação. Isso só piora quanto maior for a quantidade de usuários e de itens. Dessa forma ele demanda uma grande quantidade de recurso computacional e acaba pecando no desempenho do sistema. \cite{Grover:2017}.
+A escalabilidade aparece como o principal problema da abordagem, pois é necessário carregar uma grande quantidade de dados em memória no servidor para poder assim realizar a recomendação. Isso só piora quanto maior for a quantidade de usuários e de itens. Dessa forma, ele demanda de uma grande quantidade de recurso computacional e acaba comprometendo o desempenho do sistema. \cite{Grover:2017}.
 
-Para finalizar, como descrito por Pinela (\citeyear{Pinela:2017}), os pontos positivos do \textit{collaborative filtering} são:
+Para finalizar, como descrito por Pinela (\citeyear{Pinela:2017}), os pontos positivos da filtragem colaborativa são:
 
 \begin{itemize}
     \item Não depende do contexto do sistema;
@@ -229,100 +230,100 @@ Para finalizar, como descrito por Pinela (\citeyear{Pinela:2017}), os pontos pos
     \item É mais preciso comparado a outras técnicas;
 \end{itemize}
 
-Mas também há alguns pontos negativos a se levar em consideração, como:
+Mas também há alguns pontos negativos a se levar em consideração, tais como:
 
 \begin{itemize}
     \item A porcentagem de usuários que avaliam itens em um sistema é relativamente baixa;
     
-    \item Partida fria (\textit{cold start}): não irá ter muita informação de novos usuários para ser comparado com os outros usuários;
+    \item Partida fria (\textit{cold start}), ou seja, não irá ter muita informação de novos usuários para ser comparado com os outros usuários;
     
-    \item Novo item: não haverá muitos dados sobre novos itens, dificultando a realização de uma classificação robusta.
+    \item Novo item: não haverá muitos dados sobre os novos itens, dificultando a realização de uma classificação robusta.
 \end{itemize}
 
 \subsubsection{Filtragem baseada em conteúdo}
 \label{Contentbasedfiltering}
 
-Uma outra técnica muito usada em sistemas de recomendação é a também chamada filtragem baseada em conteúdo, na qual é analisado um conjunto de itens que são similares ao item já classificado pelo usuário anteriormente, e assim, é feito as recomendações para esse usuário. Essa similaridade se dá pela semelhança de características de um item classificado pelo próprio usuário com outro ainda não conhecido pelo usuário \cite{Grimaldi:2018}. 
+Uma outra técnica muito usada em sistemas de recomendação é a filtragem baseada em conteúdo, na qual é analisado um conjunto de itens que são similares ao item já classificado pelo usuário anteriormente, e assim, são feitas as recomendações para esse usuário. Essa similaridade se dá pela semelhança de características de um item classificado pelo próprio usuário com outro ainda não conhecido pelo usuário \cite{Grimaldi:2018}. 
 
-Segundo Abbattista et al. (\citeyear{Abbattista:2002}), para analisar os desejos e gostos do usuário é necessário gerar um perfil deste, que é conhecido como \textit{user profile} (perfil do usuário). O perfil do usuário é um conjunto de várias informações que obtemos do usuário necessárias para recomendar um item para ele, extraídas a partir do momento em que ele entra no sistema.
+Segundo Abbattista et al. (\citeyear{Abbattista:2002}), para analisar os desejos e gostos do usuário é necessário gerar um perfil deste, que é conhecido como \textit{user profile} (perfil do usuário). O perfil do usuário é um conjunto de várias informações necessárias obtidas do usuário para recomendar um item para ele, extraídas a partir do momento em que ele entra no sistema.
 
-Esse perfil é dado como uma lista de pares de atributos e valores, na qual cada atributo tem o seu respectivo valor, contendo determinada informação desse respectivo usuário. Como exemplo de atributos desse perfil, temos: idade, localidade, renda, gênero musical, gênero de filme, emprego, preferências e vários outros.
+Esse perfil é dado como uma lista de pares de atributos e valores, na qual cada atributo tem o seu respectivo valor, contendo determinada informação desse respectivo usuário. Como exemplo de atributos desse perfil, tem-se: idade, localidade, renda, gênero musical, gênero de filme, emprego, preferências e vários outros.
 
 Esses atributos são divididos em três categorias:
 \begin{itemize}
     \item \textbf{Explícito:} valores obtidos pelo próprio usuário;
 
-    \item \textbf{Implícito:} dados obtidos através das ações do usuário;
+    \item \textbf{Implícito:} dados obtidos por meio das ações realizadas pelo usuário;
 
-    \item \textbf{Existente:} informações coletadas a partir de outro serviço já existente.
+    \item \textbf{Existente:} informações coletadas a partir de outro serviço já existente ou disponível para uso.
 \end{itemize}
 
-Com esse comportamento de encontrar a similaridade com as características do item, essa abordagem evita a falha de recomendar itens novos no sistema, descrita anteriormente, existente na abordagem de \textit{collaborative filtering}. \cite{Luk:2019}.
+Com esse comportamento de encontrar a similaridade com as características do item, essa abordagem evita a falha de recomendar itens novos no sistema, descrita anteriormente, existente na abordagem de filtragem colaborativa \cite{Luk:2019}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{figuras/referencial_teorico/content_based.png}
-    \caption[Esquema do funcionamento do Content-based filtering]{Esquema do funcionamento do \textit{Content-based filtering}. Fonte: \cite{Jain:2019}}
+    \caption[Esquema do funcionamento da filtragem baseada em conteúdo]{Esquema do funcionamento da filtragem baseada em conteúdo. Fonte: \cite{Jain:2019}. Traduzido.}
     \label{fig:content_based}
 \end{figure}
 
-\subsubsection{\textit{Sistemas de recomendação baseados em conhecimento}}
+\subsubsection{Sistemas de recomendação baseados em conhecimento}
 
-Segundo Ricci et al. (\citeyear{Ricci:2010}), um sistema de recomendações baseado em um conhecimento específico de um domínio referente a como características dos itens satisfazem as necessidades e preferências dos usuários, ou de forma geral como um item é útil para um usuário, é considerado um sistema de recomendação baseado em conhecimento. O autor descreve que para esses sistemas, uma função de similaridade estima quanto um usuário corresponde a um item, ou seja, a similaridade corresponde a utilidade do item recomendado para um usuário.
+Segundo Ricci et al. (\citeyear{Ricci:2010}), um sistema de recomendação baseado em um conhecimento específico de um domínio referente a como características dos itens satisfazem as necessidades e preferências dos usuários, ou, de forma geral, como um item é útil para um usuário, é considerado um sistema de recomendação baseado em conhecimento. O autor descreve que para esses sistemas, uma função de similaridade estima quanto um usuário corresponde a um item, ou seja, a similaridade corresponde a utilidade do item recomendado para um usuário.
 
-Ainda segundo o autor a abordagem baseada em conhecimento tende a funcionar melhor que as outras no início de sua implementação mas caso não tenham recursos de aprendizado em sua implementação podem ser superados por outros métodos superficiais como o \textit{collaborative filtering}.
+Ainda segundo o autor a abordagem baseada em conhecimento tende a funcionar melhor que as outras no início de sua implementação, mas caso não tenham recursos de aprendizagem em sua implementação podem ser superados por outros métodos superficiais como a filtragem colaborativa.
 
 \subsubsection{Sistemas de recomendação híbridos}
 \label{Hybrid}
-Segundo Burke (\citeyear{Burke:2007}), sistemas de recomendações híbridos são combinações de duas ou mais abordagens descritas acima. Elas são feitas para melhorar a performance do recomendador e normalmente para sanar o problema de \textit{cold start}, como descrito no tópico da filtragem colaborativa anteriormente.
+Segundo Burke (\citeyear{Burke:2007}), sistemas de recomendação híbridos são combinações de duas ou mais abordagens descritas anteriormente. Estas recomendações são feitas para melhorar a performance do recomendador e, normalmente, para sanar o problema de partida fria, como descrito no seção \ref{Collaborativefiltering} referente a filtragem colaborativa.
 
-Existem diversas pesquisas na área que demonstram o sucesso do uso da abordagem híbrida para sistemas de recomendação. Essa abordagem tem a intenção de gerar um sistema de recomendação baseado no ponto forte de outros singulares. Ao usar mais de uma abordagem é possível uma compensar a falha de outra.
+Existem diversas pesquisas na área que demonstram o sucesso do uso da abordagem híbrida para sistemas de recomendação. Essa abordagem tem a intenção de gerar um sistema de recomendação baseado no ponto forte de outros singulares. Ao usar mais de uma abordagem é possível uma compensar a falha de outra, sendo então identificado como uma abordagem híbrida o sistema de recomendação a ser desenvolvida por este trabalho.
 
-O autor descreve sete técnicas de hibridação utilizadas. São elas:
+Burke (\citeyear{Burke:2007}) descreve sete técnicas de hibridação utilizadas. São elas:
 
 \begin{itemize}
-    \item \textbf{\textit{Weighted}}: a pontuação de diferentes componentes de recomendação são combinados numericamente;
+    \item \textbf{\textit{Weighted} (Pesado)}: a pontuação de diferentes componentes de recomendação são combinados numericamente;
     
-    \item \textbf{\textit{Switching}}: o sistema escolhe entre componentes de recomendação, seleciona um e o aplica;
+    \item \textbf{\textit{Switching} (Comutação)}: o sistema escolhe entre componentes de recomendação, seleciona um e o aplica;
     
-    \item \textbf{\textit{Mixed}}: recomendações de diferentes recomendadores são apresentadas juntas;
+    \item \textbf{\textit{Mixed} (Misturado)}: recomendações de diferentes recomendadores são apresentadas juntas;
     
-    \item \textbf{\textit{Feature Combination}}: características derivadas de diferentes fontes de conhecimento são combinadas dadas a um único sistema de recomendação;
+    \item \textbf{\textit{Feature Combination} (Combinação de características)}: características derivadas de diferentes fontes de conhecimento são combinadas dadas a um único sistema de recomendação;
     
-    \item \textbf{\textit{Feature Augmentation}}:  uma técnica de recomendação é usada para computar uma ou um conjunto de características, que será parte da entrada de outra técnica;
+    \item \textbf{\textit{Feature Augmentation} (Aumento de características)}:  uma técnica de recomendação é usada para computar uma ou um conjunto de características, que será parte da entrada de outra técnica;
     
-    \item \textbf{\textit{Cascade}}: os recomendadores recebem prioridade estrita, com os de menor prioridade quebrando os laços na pontuação dos mais altos;
+    \item \textbf{\textit{Cascade} (Cascata)}: os recomendadores recebem prioridade estrita, com os de menor prioridade quebrando os laços na pontuação dos mais altos;
 
-    \item \textbf{\textit{Meta-level}}: uma técnica de recomendação é aplicada e gera alguma ordenação de um modelo que é a entrada de outro.
+    \item \textbf{\textit{Meta-level} (Meta-nível)}: uma técnica de recomendação é aplicada e gera alguma ordenação de um modelo que é a entrada de outro.
 
 \end{itemize}
 
-\subsubsection{\textit{Sistema de recomendação baseado em critica}}
+\subsubsection{Sistema de recomendação baseado em crítica}
 \label{Critiquing-based}
-Segundo Konstan e Riedl (2012), conforme citado por Chen e Pu (\citeyear{Chen:2012}), a tecnologia de recomendação, explorando similaridade nos usuários, pode ajudar usuários a encontrar itens ideais. Como descrito anteriormente, por exemplo, o \textit{collaborative filtering} tem a premissa de recomendar itens com alta classificação de usuários que avaliam os produtos para outros usuários semelhantes. Entretanto Chen e Pu (\citeyear{Chen:2012}) descreve que para domínios de itens de alto risco, como por exemplo uma propriedade ou um veículo, é provável que usuários façam pesquisas e realizem a compra de produtos pela primeira vez. Isso faz com que produtos sejam pouco avaliados, pois pessoas que não compram esse tipo de produto regularmente, não demonstraram sua opinião regularmente, e assim incapacitando sistemas que não vão conseguir estabelecer um perfil adequado para muitos de seus candidatos a recomendações.
+Segundo Konstan e Riedl (2012), conforme citado por Chen e Pu (\citeyear{Chen:2012}), a tecnologia de recomendação, explorando similaridade nos usuários, pode ajudar usuários a encontrar itens ideais. Como descrito anteriormente, por exemplo, a filtragem colaborativa tem a premissa de recomendar itens com alta classificação de usuários que avaliam os produtos para outros usuários semelhantes. Entretanto Chen e Pu (\citeyear{Chen:2012}) descrevem que para domínios de itens de alto risco, como por exemplo uma propriedade ou um veículo, é provável que usuários façam pesquisas e realizem a compra de produtos pela primeira vez. Isso faz com que produtos sejam pouco avaliados, pois pessoas que não compram esse tipo de produto regularmente, não demonstraram sua opinião, incapacitando os sistemas que não vão conseguir estabelecer um perfil adequado para muitos de seus candidatos a recomendações.
 
-Chen e Pu (\citeyear{Chen:2012}) descreve que para superar esse problema chamado de \textit{cold start}, como já descrito anteriormente, surgem os sistemas de recomendação baseados em crítica, que são amplamente reconhecidos por serem uma tecnologia de recomendação efetiva, assim como uma busca baseada em preferência efetiva que emprega um sistema de \textit{feedback} chamado \textit{critiquing} (criticar).
+Chen e Pu (\citeyear{Chen:2012}) também descrevem que para superar esse problema chamado de partida fria, descrito anteriormente, surgem os sistemas de recomendação baseados em crítica, que são amplamente reconhecidos por serem uma tecnologia de recomendação efetiva, assim como uma busca baseada em preferência efetiva que emprega um sistema de \textit{feedback} chamado \textit{critiquing} (criticar).
 
-O autor afirma que nos sistemas baseados em crítica, inicialmente, as preferências do usuário não interferem na precisão da decisão, pois esse sistema se refere a um processo subsequente de críticas incrementais que ajudam os usuários a tomarem decisões mais informadas e precisas.
+Esses autores afirmam que nos sistemas baseados em crítica, inicialmente, as preferências do usuário não interferem na precisão da decisão, pois esse sistema se refere a um processo subsequente de críticas incrementais que ajudam os usuários a tomarem decisões mais informadas e precisas.
 
 O sistema de recomendação baseado em crítica simula um vendedor artificial que inicialmente faz recomendações com base nas preferências atuais de um usuário e em seguida obtém \textit{feedback} do mesmo em forma de críticas, como por exemplo: “Gostaria de algo mais barato?”. É necessário que esse processo descrito seja em ciclos para que o usuário alcance seu produto ideal \cite{Chen:2012}. Segundo Pu (2000) e Faltings (2002), citado por Chen e Pu (\citeyear{Chen:2012}), um comprador normalmente tem muitas restrições e preferências que não são declaradas inicialmente, e ele só toma conhecimento quando as soluções propostas as violam.
 
-Tipicamente, um sistema de recomendação baseado em crítica segue o modelo de interação sistema-usuário como apresentado na Figura \ref{fig:sistema_usuario} \cite{Chen:2012}.
+Tipicamente, um sistema de recomendação baseado em crítica segue o modelo de interação sistema-usuário como apresentado na Figura \ref{fig:sistema_usuario}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{figuras/referencial_teorico/sistema_usuario.png}
-    \caption[Modelo de interação sistema-usuário]{Modelo de interação sistema-usuário. Fonte: \cite{Chen:2012}}
+    \caption[Modelo de interação sistema-usuário]{Modelo de interação sistema-usuário. Fonte: \cite{Chen:2012}. Traduzido.}
     \label{fig:sistema_usuario}
 \end{figure}
 
-Primeiramente o usuário atribui sua preferência, podendo ser um item de partida ou valores específicos sobre recursos dos itens. Em seguida o sistema recomenda um ou diversos itens para o usuário a partir de sua preferência inicial. Nesse momento um usuário seleciona um item podendo ser sua escolha final, mas normalmente ele escolhe um item quase desejável e dessa forma fará críticas sobre o item. O tipo de crítica que o usuário irá fazer vai depender do suporte a crítica do sistema. Uma vez que é feita a crítica o sistema irá atualizar suas recomendações, ou seja, refinando a preferência do usuário.
+Primeiramente, o usuário atribui sua preferência, podendo ser um item de partida ou valores específicos sobre recursos dos itens. Em seguida, o sistema recomenda um ou diversos itens para o usuário a partir de sua preferência inicial. Nesse momento um usuário seleciona um item podendo ser sua escolha final, mas normalmente ele escolhe um item quase desejável e dessa forma fará críticas sobre o item. O tipo de crítica que o usuário irá fazer vai depender do suporte a crítica do sistema. Uma vez que é feita a crítica o sistema irá atualizar suas recomendações, ou seja, refinando a preferência desse usuário.
 
-Os sistemas de recomendação baseados em crítica dão suporte a três tipos principais, São eles: \textit{natural conversational critiques}, \textit{system-suggested critiques} (críticas sugeridas pelo sistema), e \textit{user-initiated critiquing} (crítica iniciada pelo usuário) \cite{Chen:2012}.
+Os sistemas de recomendação baseados em crítica dão suporte a três tipos principais, São eles: \textit{natural conversational critiques} (Dialogo conversacional natural), \textit{system-suggested critiques} (críticas sugeridas pelo sistema), e \textit{user-initiated critiquing} (crítica iniciada pelo usuário) \cite{Chen:2012}.
 
-\textbf{Crítica iniciada pelo usuário}. Segundo Pu and Chen (2005), como citado por Chen e Pu (\citeyear{Chen:2012}), a abordagem de crítica iniciada pelo usuário motiva usuários a fazer críticas estimulando-o com exemplos. Essa abordagem dá a liberdade para o usuário fazer a crítica para unidades ou qualquer combinação de recursos. O objetivo desse tipo de sistema é dar suporte ao usuário a executar livremente o \textit{trade-off} (troca). Isso pode ser definido como quando um usuário altera sua preferência referente ao valor de um atributo em particular. Esse processo melhora significativamente a precisão e confiança dos usuários.
+\textbf{Crítica iniciada pelo usuário}. Segundo Pu and Chen (2005), como citado por Chen e Pu (\citeyear{Chen:2012}), a abordagem de crítica iniciada pelo usuário motiva usuários a fazer críticas estimulando-os com exemplos. Essa abordagem dá a liberdade para o usuário fazer a crítica para unidades ou qualquer combinação de recursos. O objetivo desse tipo de sistema é dar suporte ao usuário a executar livremente o \textit{trade-off} (troca). Isso pode ser definido como quando um usuário altera sua preferência referente ao valor de um atributo em particular. Esse processo melhora significativamente a precisão e confiança dos usuários.
 
-Chen e Pu (\citeyear{Chen:2012}) descreve \textit{exemple-critiquing} (critica de exemplo) como um tipo de sistema que consiste em interface do usuário e uma ferramenta de busca. Inicialmente um usuário inicia sua busca especificando sua preferência por meio de uma área de consulta. Cada preferência é composta por valores de atributos e um peso atribuído a esse atributo, chamado de “importância”. Para a geração da recomendação é utilizado um modelo de preferência baseado em MAUT.
+Chen e Pu (\citeyear{Chen:2012}) descreve \textit{example-critiquing} (crítica de exemplo) como um tipo de sistema que consiste na interface do usuário e uma ferramenta de busca. Inicialmente, um usuário inicia sua busca especificando sua preferência por meio de uma área de consulta. Cada preferência é composta por valores de atributos e um peso atribuído a esse atributo, geralmente, chamado de “importância”. Para a geração da recomendação é utilizado um modelo de preferência baseado em MAUT.
 
 Segundo Keeney and Raiffa (1976) conforme citado por Chen e Pu (\citeyear{Chen:2012}), MAUT ou teoria da utilidade de atributos múltiplos, é uma teoria que leva em consideração preferências de valor conflitantes e produz uma pontuação para cada item. Chen and Pu (2007) , conforme citado por Kasamani (\citeyear{Kasamani:2017}), definem um modelo de preferência como o par \((V_1, ..., V_n, w_1, ..., w_n)\) onde \(V_1\) é o valor função e \(w_i\) o peso para cada atributo \(A_i\). A utilidade de cada item \((a_1, a_2, ..., a_n)\) pode ser computada utilizando a função de utilidade como mostrada na equação \eqref{funcaoUtilidade}.
 
@@ -331,159 +332,163 @@ Segundo Keeney and Raiffa (1976) conforme citado por Chen e Pu (\citeyear{Chen:2
     U(<a_1,a_2,...,a_n>)=\sum_{i=1}^{n} w_i V_i(a_i)
 \end{equation}
 
-Após atribuída a primeira preferência do usuário o mecanismo de busca construído classifica-rá todos os itens com suas devidas pontuações, o que permitirá sua ordenação e assim o sistema retornará “k” principais itens. Segundo Faltings et al. (2004), como citado por Chen e Pu (\citeyear{Chen:2012}) normalmente são retornados entre 5 a 20 itens. Então o usuário aceita um item ou escolhe uma solução próxima e interage com o painel de \textit{trade-off} (troca), em que pode atribuir críticas. Em seguida, com um conjunto de críticas o sistema irá refinar o modelo de preferência do usuário juntamente com as importâncias (pesos) dos atributos. Por fim será recalculado e um novo conjunto de recomendações.
+Após atribuída a primeira preferência do usuário o mecanismo de busca construído classificará todos os itens com suas devidas pontuações, o que permitirá sua ordenação e assim o sistema retornará “k” principais itens. Segundo Faltings et al. (2004), como citado por Chen e Pu (\citeyear{Chen:2012}), normalmente são retornados entre 5 a 20 itens. Então o usuário aceita um item ou escolhe uma solução próxima e interage com o painel de troca (\textit{trade-off}), em que pode atribuir críticas. Em seguida, com um conjunto de críticas o sistema irá refinar o modelo de preferência do usuário juntamente com as importâncias (pesos) dos atributos. Por fim, neste processo o seu valor será recalculado e um novo conjunto de recomendações obtidas.
 
-\section{\textit{Machine Learning}}
+\section{Aprendizado de Máquina}
 \label{machineLearning}
-\subsection{O que é \textit{Machine Learning}?}
+\subsection{O que é Aprendizado de Máquina (\textit{Machine Learning})?}
 
-Segundo Mitchell (\citeyear{Mitchell:1997:ML:541177}) desde a invenção dos computadores nós seres humanos nos perguntamos se seria possível computadores aprenderem com a experiência automaticamente, e se seria possível entender e programá-los para esse fim. Ainda não se sabe como programar computadores para aprenderem tão bom quanto humanos, mas, nos dias atuais, existem algoritmos que são eficazes para certos tipos de tarefas de aprendizagem. 
+Segundo Mitchell (\citeyear{Mitchell:1997:ML:541177}), desde a invenção dos computadores sempre existiu a duvida da possibilidade de computadores aprenderem com a experiência automaticamente e se seria possível entender e programá-los para esse fim. Ainda não se sabe como programar computadores para aprenderem tão bom quanto humanos, mas, nos dias atuais, existem algoritmos que são eficazes para certos tipos de tarefas de "aprendizagem". 
 
-Segundo Alpaydin (\citeyear{Alpaydin:2010:IML:1734076}) algoritmos são uma sequência de instruções em que se recebe umas entrada e se encontra uma saída. Por exemplo, um algoritmo pode ser feito para ordenar números. A entrada do algoritmo é uma lista de números desordenados e a saída uma lista de números ordenados.
+Segundo Alpaydin (\citeyear{Alpaydin:2010:IML:1734076}), algoritmos são uma sequência de instruções em que se recebe umas entrada e se encontra uma saída. Por exemplo, um algoritmo pode ser feito para ordenar números. A entrada do algoritmo é uma lista de números em qualquer ordem ou desordem e a saída será uma lista desses números ordenados.
 
-Para algumas tarefas, entretanto, algoritmos não são capazes de estabelecer uma saída. Por exemplo, para identificar \textit{spams} em um conjunto de e-mails. Como entrada é passado um e-mail e como saída é desejado classificar entre “sim” ou “não” para spam. Não é possível identificar o que pode ser considerado um spam para todos os casos, pois isso é relativo de tempo em tempo e de individuo para individuo \cite{Alpaydin:2010:IML:1734076}.
+Para algumas tarefas, entretanto, algoritmos não são capazes de estabelecer uma saída coerente a esperada. Por exemplo, para identificar \textit{spams} (lixo eletrônico) em um conjunto de e-mails. Como entrada é passado um e-mail e como saída é desejado classificar entre “sim” ou “não” para os possíveis lixos eletrônicos. Não é possível identificar o que pode ser considerado um lixo eletrônico para todos os casos, pois isso é relativo de tempo em tempo e de individuo para individuo \cite{Alpaydin:2010:IML:1734076}.
 
-O que é faltante em conhecimento, é compensado em dados. É possível, ainda referente ao exemplo dos e-mails, processar uma quantidade significativa de mensagens de exemplo, indicando ser um e-mail spam ou não, com o objetivo de “aprender” e conseguir classificar mensagens a partir disso. O que é desejável é encontrar um algoritmo para essa tarefa. Para algoritmos de ordenação, por exemplo, não é necessário “aprender” para ordenar, mas existem para várias situações, não um algoritmo, mas dados de exemplos \cite{Alpaydin:2010:IML:1734076}.
+O que é "faltante" em conhecimento, é compensado em dados. É possível, ainda referente ao exemplo dos e-mails, processar uma quantidade significativa de mensagens de exemplo, indicando ser um e-mail lixo eletrônico ou não, com o objetivo de “aprender” e conseguir classificar mensagens a partir disso. O que é desejável é encontrar um algoritmo para essa tarefa. Para algoritmos de ordenação, por exemplo, não é necessário “aprender” para ordenar, mas existem para várias situações, não um algoritmo, mas dados de exemplos \cite{Alpaydin:2010:IML:1734076}.
 
 
-Segundo Witten et al. (\citeyear{Witten:2016:DMF:3086818}) o mundo atual está sobrecarregado de dados, e cada vez mais parece continuar e aumentar. Os computadores proporcionam armazenamento de dados para salvar coisas que antes provavelmente teria se jogado fora. Com avanço das tecnologias e dessa forma seu barateamento, existe um aumento no acesso de pessoas a computadores. A cada passo no mundo atual é mais um dado no banco de dados. A internet promove diversas informações, e a cada escolha que se faz, mais um registro é feito.	
+Segundo Witten et al. (\citeyear{Witten:2016:DMF:3086818}), o mundo atual está sobrecarregado de dados, e cada vez mais parece continuar aumentando. Os computadores proporcionam armazenamento de dados para salvar coisas que antes provavelmente teria sido jogado fora. Com avanço das tecnologias e seu barateamento, existe um aumento no acesso de pessoas aos computadores. A cada passo no mundo atual é mais um dado no banco de dados. A Internet promove diversas informações e a cada escolha que se faz, mais um registro é efetuado.	
 
-Escondido nesses dados existem informações potencialmente úteis \cite{Witten:2016:DMF:3086818}. Banco de dados para os fins como exemplificados acima se tornam úteis somente quando analisados e transformados em informações que sejam possível fazer uso, como por exemplo para fazer predições. Nos exemplo dos e-mails, não é completamente randômico a forma em que as mensagens são escritas, há um padrão nessas mensagens, e analisando esse fator é possível fazer predições e classificar os e-mails \cite{Alpaydin:2010:IML:1734076}.
+Escondido nesses dados existem informações potencialmente úteis \cite{Witten:2016:DMF:3086818}. Banco de dados para os fins como exemplificados anteriormente de armazenamento se tornam úteis somente quando analisados e transformados em informações que sejam possível fazer uso, como por exemplo para fazer predições. Nos exemplo dos e-mails, não é completamente randômico a forma em que as mensagens são escritas, há um padrão nessas mensagens, e analisando esse fator é possível fazer predições e classificar os e-mails \cite{Alpaydin:2010:IML:1734076}.
 
-Segundo Witten et al. (\citeyear{Witten:2016:DMF:3086818}) \textit{machine learning} se trata de um campo do conhecimento em que são desenvolvidas técnicas para encontrar e descrever padrões estruturais em dados. Segundo o autor não a nada de novo em tentar encontrar padrões em dados. As pessoas vem procurando padrões em dados desde o início na humanidade. Os caçadores para encontrar sua caça, buscavam padrões na migração dos animais, agricultores buscavam padrões no crescimento das colheitas, políticos buscavam padrões na opinião dos eleitores e entre outras situações. 
+Segundo Witten et al. (\citeyear{Witten:2016:DMF:3086818}), o aprendizado de máquina se trata de um campo do conhecimento em que são desenvolvidas técnicas para encontrar e descrever padrões estruturais em dados. Segundo estes autores, não a nada de novo em tentar encontrar padrões em dados. As pessoas vêm procurando padrões em dados desde o início na humanidade. Os caçadores para encontrar sua caça, buscavam padrões na migração dos animais, agricultores buscavam padrões no crescimento das colheitas, políticos buscavam padrões na opinião dos eleitores entre outras situações.
 
-Segundo Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}), \textit{machine learning} investiga como computadores podem aprender ou melhorar sua performance baseado em dados. Ele diz ainda que a principal área de pesquisa refere-se a desenvolvimento de programas de computador que aprendem automaticamente a reconhecer padrões complexos e a tomar decisões inteligentes com base nos dados.
+Segundo Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}), o aprendizado de máquina investiga como computadores podem "aprender" ou melhorar sua performance analisando dados. Ele diz ainda que a principal área de pesquisa refere-se ao desenvolvimento de programas de computador que aprendem automaticamente a reconhecer padrões complexos e a tomar decisões inteligentes com base nos dados.
 
-Segundo Alpaydin (\citeyear{Alpaydin:2010:IML:1734076}) a aplicação de métodos de \textit{machine learning} em grandes bases de dados é denominado de \textit{data mining}. Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) afirmam que \textit{data mining} é um assunto interdisciplinar e pode ser definido de várias maneiras diferentes. O autor considera "mineração de conhecimento a partir de dados" como um nome mais apropriado pois faz referência a mineração de conhecimento referente a grandes quantidades de dados.
+Segundo Alpaydin (\citeyear{Alpaydin:2010:IML:1734076}), a aplicação de métodos de aprendizado de máquina em grandes bases de dados é denominado de \textit{Data Mining} (Mineração de Dados). Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) afirmam que Mineração de dados é um assunto interdisciplinar e pode ser definido de várias maneiras diferentes. Esses autores consideram "mineração de conhecimento a partir de dados" como um nome mais apropriado, pois faz referência a mineração de conhecimento referente as grandes quantidades de dados.
 
-Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) dizem ainda que muitas pessoas consideram \textit{data mining} como uma fase essencial do processo de descoberta de conhecimento. O processo é demonstrado na Figura \ref{fig:etapas_ml} que é uma sequência interativa de sete etapas existentes. Elas são descritas pelo autor como:
+Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) dizem ainda que muitas pessoas consideram a mineração de dados como uma fase essencial do processo de descoberta de conhecimento. O processo é demonstrado na Figura \ref{fig:etapas_ml} que é uma sequência interativa de sete etapas existentes. Estas etapas são descritas por estes autores como:
 
 \begin{itemize}
-    \item \textbf{\textit{Data cleaning} (Limpeza de Dados)}: Para remover dados inconsistentes;
+    \item \textbf{\textit{Data cleaning} (Limpeza de Dados)}: para remover dados inconsistentes;
 
-    \item \textbf{\textit{Data integration} (Integração de Dados)}: Onde várias fontes de dados são combinadas;
+    \item \textbf{\textit{Data integration} (Integração de Dados)}: em que várias fontes de dados são combinadas;
 
-    \item \textbf{\textit{Data selection} (Seleção de Dados)}: Onde os dados relevantes para a tarefa em análise são recuperados da base de dados;
+    \item \textbf{\textit{Data selection} (Seleção de Dados)}: onde os dados relevantes para a tarefa em análise são recuperados da base de dados;
 
-    \item \textbf{\textit{Data transformation} (Transformação de Dados)}: Onde os dados são transformados e consolidados em formas apropriadas para mineração, executando operações de resumo ou agregação;
+    \item \textbf{\textit{Data transformation} (Transformação de Dados)}: em que os dados são transformados e consolidados em formas apropriadas para mineração, executando operações de resumo ou agregação;
 
-    \item \textbf{\textit{Data mining} (Mineração de Dados)}: Um processo essencial em que métodos inteligentes são aplicados para extrair padrões;
+    \item \textbf{\textit{Data mining} (Mineração de Dados)}: processo essencial em que métodos inteligentes são aplicados para extrair padrões;
 
-    \item \textbf{\textit{Pattern evaluation} (Avaliação de padrões)}: Identificar os padrões realmente interessantes que representam o conhecimento com base em medidas de interesse;
+    \item \textbf{\textit{Pattern evaluation} (Avaliação de padrões)}: identifica os padrões realmente interessantes que representam o conhecimento com base em medidas de interesse;
 
-    \item \textbf{\textit{Knowledge presentation} (Apresentação de conhecimento)}: Onde as técnicas de visualização e representação de conhecimento são usadas para apresentar conhecimento extraído aos usuários.
+    \item \textbf{\textit{Knowledge presentation} (Apresentação de conhecimento)}: onde as técnicas de visualização e representação de conhecimento são usadas para apresentar conhecimento extraído das bases para os usuários.
 
 \end{itemize}
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{figuras/referencial_teorico/etapas_ml.png}
-    \caption[Etapas do processo de descoberta de conhecimento]{Etapas do \textit{machine learning}. Fonte: \cite{Han:2011:DMC:1972541}}
+    \caption[Etapas do processo de descoberta de conhecimento]{Etapas do processo de descoberta de conhecimento. Fonte: \cite{Han:2011:DMC:1972541}. Traduzido.}
     \label{fig:etapas_ml}
 \end{figure}
 
-Dos passos um ao quatro, o autor considera como formas diferentes de pré-processamento de dados, que assim são propagados para mineração. Após os dados serem minerados eles são apresentados para o usuário ou postos em uma base de conhecimento. O dado apresentado pode ser ou não reaproveitado.
+Das etapas de limpeza a transformação de dados, os autores consideram como formas diferentes de pré-processamento de dados, que assim são propagados para mineração. Após os dados serem minerados eles são apresentados para o usuário ou postos em uma base de conhecimento. O dado apresentado pode ser ou não reaproveitado.
 
-Dado que muitas outras áreas têm diferentes definições para \textit{data mining}, Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) definem-a como:
+Dado que muitas outras áreas têm diferentes definições para Mineração de Dados, Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}, p. 8) definem-a como:
 
-“Processo de descobrir padrões e conhecimentos interessantes a partir de grandes quantidades de dados. As fontes de dados podem incluir bancos de dados, \textit{data warehouses}, a \textit{Web}, outros repositórios de informações ou dados transmitidos dinamicamente para o sistema.” 
+\begin{quote}
+    “Processo de descobrir padrões e conhecimentos interessantes a partir de grandes quantidades de dados. As fontes de dados podem incluir bancos de dados, \textit{data warehouses}, a \textit{Web}, outros repositórios de informações ou dados transmitidos dinamicamente para o sistema.” 
+\end{quote}
 
 \subsection{Aprendizado indutivo}
 
-Como dito anteriormente, o campo de \textit{machine learning} permitiu com que aplicações sejam capazes de aprender e melhorar seu desempenho por meio da observação. Segundo Batista (\citeyear{Batista}) existem diversas abordagens diferentes que podem ser utilizadas por uma aplicação como, por exemplo, o aprendizado por hábito, por instrução, por dedução, por analogia e por indução. O autor afirma que o aprendizado indutivo é um dos mais úteis pois possibilita novos conhecimentos a partir de exemplos ou casos previamente observados, mas também um dos mais desafiadores pois o conhecimento gerado ultrapassa os limites das premissas e ainda não há a garantia do conhecimento ser verdadeiro.
+Como dito anteriormente, a área de aprendizado de máquina permitiu com que aplicações sejam capazes de aprender e melhorar seu desempenho por meio da observação (análise dos dados armazenados). Segundo Batista (\citeyear{Batista}), existem diversas abordagens diferentes que podem ser utilizadas por uma aplicação como, por exemplo, o aprendizado por hábito, por instrução, por dedução, por analogia e por indução. O autor afirma que o aprendizado indutivo é um dos mais úteis pois possibilita novos conhecimentos a partir de exemplos ou casos previamente observados, mas também um dos mais desafiadores, porque o conhecimento gerado ultrapassa os limites das premissas e ainda não há a garantia do conhecimento ser verdadeiro.
 
-Monard e Baranauskas (\citeyear{Monard:2003}) definem a indução como uma forma de inferência lógica que possibilita a obtenção de conclusões genérica sobre um conjunto de exemplos. Ela é caracterizada por um raciocínio originário de uma generalização de um conceito específico, dessa forma, da parte para o todo. Para um conceito ser aprendido é feita uma inferência indutiva sobre os exemplos apresentados. Mesmo que as hipóteses geradas pela inferência poderem ou não preservar a verdade, é um dos principais métodos utilizados para derivar conhecimento novo e predizer eventos futuros.
+Monard e Baranauskas (\citeyear{Monard:2003}) definem a indução como uma forma de inferência lógica que possibilita a obtenção de conclusões genéricas sobre um conjunto de exemplos. Ela é caracterizada por um raciocínio originário de uma generalização de um conceito específico, dessa forma, da parte para o todo. Para um conceito ser aprendido é feita uma inferência indutiva sobre os exemplos apresentados. Mesmo que as hipóteses geradas pela inferência poderem ou não preservar a verdade, é um dos principais métodos utilizados para derivar conhecimento novo e predizer eventos futuros.
 
-Os autores definem que o aprendizado indutivo se divide em dois, supervisionado e não-supervisionado. No aprendizado supervisionado os dados apresentados ao algoritmo são exemplos postos a serem treinados e possuem o rótulo da classe associada conhecido. De maneira geral os exemplos são compostos de características e um rótulo da classe associada. O algoritmo de aprendizado tem como objetivo construir um classificador capaz de determinar a classe de exemplos ainda não rotulados. Para rótulos de classe com valores contínuos são definidos problemas denominados de “regressão”, para valores discretos  “classificação”.
+Os autores definem que o aprendizado indutivo se divide em dois, supervisionado e não-supervisionado. No aprendizado supervisionado os dados apresentados ao algoritmo são exemplos postos a serem treinados e possuem o rótulo da classe associada conhecido. De maneira geral, os exemplos são compostos de características e um rótulo da classe associada. O algoritmo de aprendizado tem como objetivo construir um classificador capaz de determinar a classe de exemplos ainda não rotuladas. Para rótulos de classe com valores contínuos são definidos problemas denominados de “regressão”, para valores discretos  “classificação”.
 
-Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) define aprendizado não-supervisionado essencialmente como sinônimo de \textit{cluster}. Ele não é supervisionado por seus exemplos de entrada não serem rotulados como classe. Normalmente é possível usar agrupamento para descobrir classes nos dados.
+Han, Kamber e Pei (\citeyear{Han:2011:DMC:1972541}) definem aprendizado não-supervisionado essencialmente como sinônimo de \textit{cluster} (grupo). Ele não é supervisionado por seus exemplos de entrada não serem rotulados como classe. Normalmente é possível usar agrupamento para descobrir classes nos dados (características comuns).
 
-Para o presente trabalho será estudado e modelado uma solução em \textit{machine learning} para um problema de classificação supervisionada. A Figura \ref{fig:hierarquia_aprendizado} apresenta a hierarquia do aprendizado indutivo destacando a classificação.
+Para o presente trabalho será estudado e modelado uma solução em aprendizado de máquina para um problema de classificação supervisionada. A Figura \ref{fig:hierarquia_aprendizado} apresenta a hierarquia do aprendizado indutivo destacando a classificação.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.45]{figuras/referencial_teorico/hierarquia_aprendizado.png}
-    \caption[Hierarquia do aprendizado indutivo]{Hierarquia do aprendizado indutivo. Fonte: (MONARD, 2003)}
+    \caption[Hierarquia do aprendizado indutivo]{Hierarquia do aprendizado indutivo. Fonte: \cite{Monard:2003}.}
     \label{fig:hierarquia_aprendizado}
 \end{figure}
 
-Para exemplificar, Monard e Baranauskas (\citeyear{Monard:2003}) apresentam o processo de classificação como na Figura \ref{fig:processo_classificacao}. Ele descreve que os dados de entrada do indutor são provenientes do conhecimento sobre um domínio. Após feita a indução o classificador é avaliado, podendo ou não ser repetido, dado que podem ser adicionado novos atributos ou exemplos, e ainda podem ser feitos ajustes nos parâmetros no processo de indução.
+Para exemplificar, Monard e Baranauskas (\citeyear{Monard:2003}) apresentam o processo de classificação como na Figura \ref{fig:processo_classificacao}. Estes autores descrevem que os dados de entrada do indutor são provenientes do conhecimento sobre um domínio. Após feita a indução o classificador é avaliado, podendo ou não ser repetido, dado que podem ser adicionados novos atributos ou exemplos, e ainda podem ser feitos ajustes nos parâmetros no processo de indução.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{figuras/referencial_teorico/processo_classificacao.png}
-    \caption[Processo de classificação]{Processo de classificação. Fonte: \cite{Monard:2003}}
+    \caption[Processo de classificação]{Processo de classificação. Fonte: \cite{Monard:2003}.}
     \label{fig:processo_classificacao}
 \end{figure}
 
 \subsubsection{Questões gerais dos algoritmos de aprendizado supervisionado}
 	
-Segundo Kotsiantis (\citeyear{Kotsiantis}) o processo que descreve a aplicação de \textit{machine learning} supervisionada para um problema do mundo real é como apresentado no fluxograma representado na Figura \ref{fig:aplicacao_ml}.
+Segundo Kotsiantis (\citeyear{Kotsiantis}), o processo que descreve a aplicação de aprendizado de máquina supervisionado para um problema do mundo real é como apresentado no fluxograma representado na Figura \ref{fig:aplicacao_ml}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{figuras/referencial_teorico/aplicacao_ml.png}
-    \caption[Aplicação de machine learning supervisionada no mundo real]{Aplicação de \textit{machine learning} supervisionada no mundo real. Fonte: \cite{Kotsiantis}}
+    \caption[Aplicação de machine learning supervisionada no mundo real]{Aplicação de aprendizado de máquina supervisionada no mundo real. Fonte: \cite{Kotsiantis}. Traduzido.}
     \label{fig:aplicacao_ml}
 \end{figure}
 
-O autor define o primeiro passo como a coleta de dados. Separar ou isolar quais são os campos mais informativos e relevantes para o problema. O segundo passo é o pré-processamento dos dados. Zhang et al. (2002), como citado pelo autor, considera um passo de muita importância, pois os dados podem ter ruídos e valores de recursos ausentes. Há diversas pesquisas referentes a detecção de dados faltantes e ruídos e como lidar com isso. Para lidar com esse tipo de problema muitas vezes é feita uma seleção de dados, que é considerada como um problema de otimização que tenta manter a qualidade da mineração minimizando o tamanho da amostra. Segundo Liu and Motoda (2001), conforme citado pelo autor Haverá uma redução nos dados, mas fará com que o algoritmo funcione efetivamente com vários grandes conjuntos de dados.
+O autor define o primeiro passo como a coleta de dados. Separar ou isolar quais são os campos mais informativos e relevantes para o problema. O segundo passo é o pré-processamento dos dados. Zhang et al. (2002), como citado pelo autor, considera um passo de muita importância, pois os dados podem ter ruídos e valores de recursos ausentes. Há diversas pesquisas referentes a detecção de dados ausentes (ou faltantes) e ruídos e como lidar com isso. Para lidar com esse tipo de problema muitas vezes é feita uma seleção de dados, que é considerada como um problema de otimização que tenta manter a qualidade da mineração minimizando o tamanho da amostra. Segundo Liu e Motoda (2001), conforme citado por Kotsiantis (\citeyear{Kotsiantis}), haverá uma redução nos dados, mas fará com que o algoritmo funcione efetivamente com vários grandes conjuntos de dados.
 
-Em seguida vem a definição dos dados de treino. Segundo Yu e Liu (2004), conforme citado pelo autor Kotsiantis (\citeyear{Kotsiantis}), define como o processo de identificar e remover o máximo de campos ou características irrelevantes. Isso faz com que os algoritmos de \textit{data mining} operem mais rápidos e com mais eficácia, pois diminui a dimensionalidade dos dados. De acordo com o Markovitch e Rosenstein (2002), referidos por Kotsiantis (\citeyear{Kotsiantis}), muitas vezes há campos que dependem muito um do outro e isso é ruim, pois influenciam negativamente no modelo de \textit{machine learning}. Uma solução para isso é a aplicação da técnica de transformação ou construção de novos campos a partir de outros. Isso vai levar a classificadores mais concisos e precisos além de melhorar a sua compreensibilidade.
+Em seguida vem a definição dos dados de treino. Segundo Yu e Liu (2004), conforme citado pelo autor Kotsiantis (\citeyear{Kotsiantis}), define como o processo de identificar e remover o máximo de campos ou características irrelevantes. Isso faz com que os algoritmos de mineração de dados operem mais rápidos e com mais eficácia, pois diminui a dimensionalidade dos dados. De acordo com o Markovitch e Rosenstein (2002), referidos por Kotsiantis (\citeyear{Kotsiantis}), muitas vezes há campos que dependem muito um do outro e isso é ruim, pois influenciam negativamente no modelo de aprendizado de máquina. Uma solução para isso é a aplicação da técnica de transformação ou construção de novos campos a partir de outros. Isso vai levar a classificadores mais concisos e precisos, além de melhorar a sua compreensibilidade.
 
 Logo após o passo de escolha do algoritmo de aprendizagem, que é de muita criticidade, os dados são treinados. Quando o teste preliminar é julgado satisfatório, um classificador é criado e está pronto para ser usado.
 
-Para se avaliar um classificador é comumente usado a métrica de acurácia (porcentagem de previsões corretas dividido pelo número total de previsões). Segundo o autor existem pelo menos três técnicas para calcular a acurácia do classificador. Essas técnicas necessitam de uma base de dados de teste, normalmente obtidas pela divisão do conjunto de dados, que possibilitam no cálculo de acurácia.
+Para se avaliar um classificador é comumente usado a métrica de acurácia (porcentagem de previsões corretas dividido pelo número total de previsões). Segundo Kotsiantis \citeyear{Kotsiantis} existem pelo menos três técnicas para calcular a acurácia do classificador. Essas técnicas necessitam de uma base de dados de teste, normalmente obtidas pela divisão do conjunto de dados, que possibilitam o cálculo de acurácia.
 
 Caso a taxa de erro encontrada seja insatisfatória, deve-se retornar para a etapa anterior do processo de classificação supervisionada. Fatores devem ser examinados com o propósito de melhorar o modelo. De acordo com Japkowicz e Stephen (2002), citado pelo Kotsiantis (\citeyear{Kotsiantis}), muitas vezes fatores como: características importantes não estão sendo usadas, base de teste está muito pequena, dimensionalidade do problema é muito alta, foi selecionado um algoritmo inadequado para o problema ou há a necessidade de ajustes em seus parâmetros e ainda o conjunto de dados está desequilibrado. Uma forma comum de se comparar algoritmos para encontrar a melhor escolha, é por meio de comparações estáticas da acurácia para um determinado conjunto de dados de teste.
 
-Para os chamados “sistemas inteligentes”, a classificação supervisionada é tarefa mais realizada. Dessa forma foram desenvolvidas várias técnicas baseadas em inteligência artificial, Perceptron e Estatísticas.
+Para os chamados “sistemas inteligentes”, a classificação supervisionada é a tarefa mais realizada. Dessa forma, foram desenvolvidas várias técnicas baseadas em Inteligência Artificial, Perceptron e Estatísticas.
 	
 \subsubsection{Método \textit{Ensemble}}
 \label{ensemble}
-Segundo Sirikulviriya e Sinthupinyo (\citeyear{SirikulviriyaIntegrationOR}) existe uma técnica muito popular de \textit{machine learning}, de grande interesse nas comunidades de \textit{data mining}, que é chamada de método \textit{ensemble} (conjunto). Ele afirma que é amplamente aceito que a precisão do conjunto de vários classificadores fracos (classificadores com baixa capacidade preditiva) é geralmente melhor que um único classificador, dada a mesma quantidade de dados de treino. Algoritmos eficazes diversos foram inventados para tal função nos últimos 15 anos, como por exemplo: \textit{Bagging} (Ensacamento), \textit{Boosting} (Aumento), \textit{Arching} (Arquear) e \textit{Random Forest} (Floresta Aleatória).
+Segundo Sirikulviriya e Sinthupinyo (\citeyear{SirikulviriyaIntegrationOR}), existe uma técnica muito popular de aprendizado de máquina, de grande interesse nas comunidades de mineração de dados, que é chamada de método \textit{ensemble} (conjunto). Ele afirma que é amplamente aceito que a precisão do conjunto de vários classificadores fracos (classificadores com baixa capacidade preditiva) é geralmente melhor que um único classificador, dada a mesma quantidade de dados de treino. Algoritmos eficazes diversos foram inventados para tal função nos últimos 15 anos, como por exemplo: \textit{Bagging} (Ensacamento), \textit{Boosting} (Aumento), \textit{Arching} (Arquear) e \textit{Random Forest} (Floresta Aleatória).
 
-\textbf{\textit{Random Forest}}. É um classificador \textit{ensemble} proposto por Breiman (\citeyear{Breiman:2001:RF:570181.570182}). De forma geral, a forma utilizada para criação deste classificador é a construção de várias árvores de decisão, em que cada uma utiliza um subconjunto de atributos selecionados aleatoriamente.
+O \textbf{\textit{Random Forest}} é um classificador de conjunto (\textit{ensemble}) proposto por Breiman (\citeyear{Breiman:2001:RF:570181.570182}). De forma geral, a forma utilizada para criação deste classificador é a construção de várias árvores de decisão, em que cada uma utiliza um subconjunto de atributos selecionados aleatoriamente.
 
 Segundo Mitchell (\citeyear{Mitchell:1997:ML:541177}), conforme citado por Amal (\citeyear{Amal}) árvores de decisão categorizam as instâncias ou exemplos, como um arranjo de uma árvore, definindo-as da raiz a um nó de folha específico. Todo nó na árvore representa um teste referente a algum atributo da instância, enquanto cada ramificação descendente do nó representará um valor de um atributo. O autor sugere um exemplo como mostrado na Figura \ref{fig:arvore_decisao}. Ele descreve que a árvore de decisão foi construída com base no atributo “perspectiva”, em que existem três valores: nublado, ensolarado e chuvoso. Há também valores com subárvores como chuvoso e ensolarado. Ao final será classificado entre brincar e não brincar nesse dia de acordo com a distribuição de exemplos de maior quantidade na folha, que inicialmente nove eram para brincar e cinco para não brincar. Como dito anteriormente e agora reforçado por Mitchell (\citeyear{Mitchell:1997:ML:541177}), a classificação de exemplos em um conjunto distinto de prováveis agrupamentos é denominado como problema de classificação.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{figuras/referencial_teorico/arvore_decisao.png}
-    \caption[Exemplo de uma árvore de decisão]{Exemplo de uma árvore de decisão. Fonte: \cite{Amal}}
+    \caption[Exemplo de uma árvore de decisão]{Exemplo de uma árvore de decisão. Fonte: \cite{Amal}. Traduzido.}
     \label{fig:arvore_decisao}
 \end{figure}
 
-Para o modelo de árvore é inicialmente alcançado a categorização em grupos de observações. Após isso segue com a pontuação dos grupos específicos gerados. É possível definir modelo de árvore como um processo de procedimento recursivo em que uma quantidade de unidades estáticas, em um conjunto, são postas em grupos. O agrupamento das unidades existentes dependem de dadas regras de divisão que são progressivas. O principal objetivo da regra de divisão é a maximização da homogeneidade ou a medida da pureza da variável de resposta em seu grupo, conforme elas vão sendo obtidas. A regra de divisão executa uma forma de dividir as observações, em que cada característica a ser dividida e a regra de divisão definida são essenciais no procedimento de divisão do processo. O principal resultado de uma árvore de decisão é a partição final das observações \cite{Amal}. 
+Para o modelo de árvore é inicialmente alcançada a categorização em grupos de observação. Após isso segue com a pontuação dos grupos específicos gerados. É possível definir modelo de árvore como um processo de procedimento recursivo em que uma quantidade de unidades estáticas, em um conjunto, são postas em grupos. O agrupamento das unidades existentes dependem de dadas regras de divisão que são progressivas. O principal objetivo da regra de divisão é a maximização da homogeneidade ou a medida da pureza da variável de resposta em seu grupo, conforme elas vão sendo obtidas. A regra de divisão executa uma forma de dividir as observações, em que cada característica a ser dividida e a regra de divisão definida são essenciais no procedimento de divisão do processo. O principal resultado de uma árvore de decisão é a partição final das observações \cite{Amal}. 
 
-Segundo Thomas (\citeyear{Thomas:2017}) a árvore de decisão é uma técnica de modelagem de \textit{machine learning} não paramétrica amplamente utilizada. Métodos não paramétricos são quando não há suposições subjacentes sobre a distribuição dos erros ou dos dados, ou seja o modelo é construído baseado na observação dos dados.
+Segundo Thomas (\citeyear{Thomas:2017}), a árvore de decisão é uma técnica de modelagem de aprendizado de máquina não paramétrica amplamente utilizada. Métodos não paramétricos são quando não há suposições subjacentes sobre a distribuição dos erros ou dos dados, ou seja o modelo é construído baseado na observação dos dados.
 
-Segundo Breiman (\citeyear{Breiman:2001:RF:570181.570182}), citado por Drummond (\citeyear{Drummond:2017}), o \textit{random forest} cria, a partir de um treinamento único, diversas árvores de decisão para fora do subconjunto de dados. Esse treinamento é feito utilizando algoritmo de \textit{bagging}, um método utilizado para melhorar a classificação ou regressão de modelos a partir da estabilidade e precisão da classificação. O \textit{random forest} faz sua predição conforme sua decisão por meio da contagem de votos dos componentes preditores de cada classe. Dessa forma é selecionada uma classe vencedora referente do número de votos acumulados para cada classe.
+Segundo Breiman (\citeyear{Breiman:2001:RF:570181.570182}), citado por Drummond (\citeyear{Drummond:2017}), o algoritmo da Floresta Aleatória cria, a partir de um treinamento único, diversas árvores de decisão para fora do subconjunto de dados. Esse treinamento é feito utilizando algoritmo de Ensacamento (\textit{bagging}), método utilizado para melhorar a classificação ou regressão de modelos a partir da estabilidade e precisão da classificação. O método da Floresta Aleatória faz sua predição conforme sua decisão por meio da contagem de votos dos componentes preditores de cada classe. Dessa forma, é selecionada uma classe vencedora referente do número de votos acumulados para cada classe. Sua estrutura pode ser observada conforme a Figura \ref{fig:random_forest}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{figuras/referencial_teorico/random_forest.png}
-    \caption[Estrutura do random forest]{Estrutura do random forest. Fonte: \cite{Chakure:2019}}
+    \caption[Estrutura do random forest]{Representação estrutura da Floresta Aleatória (\textit{Random Forest}). Fonte: \cite{Chakure:2019}. Traduzido.}
     \label{fig:random_forest}
 \end{figure}
 
+Segundo Mayr, Binder, Gefeller e Schmid (2014) conforme citado por Vecmanis (\citeyear{Vecmanis:2019}), o algoritmo de Aumento (\textbf{\textit{Boosting}}) é também um classificador de conjunto (\textit{ensemble}) baseado em algoritmos semelhantes ao Floresta Aleatória. Ele cria um modelo preditivo mais preciso por meio de uma otimização passo a passo, que envolve uma sequência de várias iterações analíticas. De forma geral, qualquer classificador fraco pode ser potencialmente melhorado (\textit{boosted}) para se tornar também um classificador forte.
 
+Segundo o Hoare (\citeyear{Hoare:2019}), o aprendizado de máquina aumentado (\textit{boosting}) começa treinando um modelo inicial, com por exemplo utilizando uma árvore de decisão. Em seguida, é construído um segundo modelo que se concentra em prever com melhor precisão os casos em que o primeiro apresentou baixa precisão. Dessa forma, é esperado que a combinação desses dois modelos seja melhor que apenas um. A cada modelo sucessivo, tenta-se corrigir as deficiências da combinação do conjunto de árvores de decisão anteriores.
 
-\textbf{\textit{Boosting}}. Segundo Mayr, Binder, Gefeller e Schmid (2014) conforme citado por Vecmanis (\citeyear{Vecmanis:2019}), \textit{boosting} é também um classificador ensemble baseado em algoritmos semelhante ao \textit{random forest}. Ele cria um modelo preditivo mais preciso por meio de uma otimização passo a passo, que envolve uma sequência de várias iterações analíticas.  De forma geral qualquer classificador fraco pode ser potencialmente melhorado (\textit{boosted}) para se tornar também um classificador forte.
-
-Segundo o Hoare (\citeyear{Hoare:2019}), o \textit{machine learning boosting} começa treinando um modelo inicial, com por exemplo utilizando uma árvore de decisão. Em seguida, é construído um segundo modelo que se concentra em prever com melhor precisão os casos em que o primeiro apresentou baixa precisão. Dessa forma é esperado que a combinação desses dois modelos seja melhor que apenas um. A cada modelo sucessivo, tenta-se corrigir as deficiências da combinação do conjunto de árvores de decisão anteriores.
-
-\textit{Gradient boosting} (Aumento de gradiente) é um algoritmo de \textit{machine learning boosting}. A ideia principal para encontrar um melhor modelo posterior, com a combinação de outros modelos, é na minimização do erro de previsão total. Ele funciona estabelecendo saídas (\textit{targets}) para o modelo posterior a fim de minimizar o erro. Para calcular essa saída a ser estabelecida vai depender de quanto a alteração da previsão desse caso (linha do \textit{dataset} de treino) afeta o erro total de previsão. Se uma pequena alteração na previsão de um caso causar uma grande queda no erro, o próximo resultado desejado do caso será um valor alto. As previsões do novo modelo que estão próximas de seus objetivos reduzirão o erro. Se uma pequena alteração na previsão de um caso não causar alteração no erro, o próximo resultado desejado do caso será zero, pois alterar essa previsão não diminuirá o erro. O \textit{gradient boosting} (gradiente descendente) é assim denominado porque os resultados de destino para cada caso são definidos com base no gradiente descendente do erro em relação à previsão \cite{Hoare:2019}.
+O \textit{Gradient boosting} (Aumento de gradiente) corresponde a um algoritmo de aprendizado de máquina aumentado. A ideia principal dele é encontrar um melhor modelo posterior, com a combinação de outros modelos, e minimizar o erro de previsão total (Figura \ref{fig:gradient_boosting}). Ele funciona estabelecendo saídas (\textit{targets}) para o modelo posterior a fim de minimizar o erro. Para calcular essa saída a ser estabelecida vai depender de quanto a alteração da previsão desse caso (amostra do conjunto de dados de treino) afeta o erro total de previsão. Se uma pequena alteração na previsão de um caso causar uma grande queda no erro, o próximo resultado desejado do caso será um valor alto. As previsões do novo modelo que estão próximas de seus objetivos reduzirão o erro. Se uma pequena alteração na previsão de um caso não causar alteração no erro, o próximo resultado desejado do caso será zero, pois alterar essa previsão não diminuirá o erro. O \textit{gradient boosting} (aumento de gradiente) é um algoritmo de \textit{gradient descent} (gradiente descendente), que é assim denominado porque os resultados de destino para cada caso são definidos com base no gradiente descendente do erro em relação à previsão \cite{Hoare:2019}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.4]{figuras/referencial_teorico/gradient_boosting.png}
-    \caption[Gradient Boosting]{Gradient Boosting. Fonte: \cite{Chepenko:2019}}
+    \caption[Gradient Boosting]{\textit{Gradient Boosting}. Fonte: \cite{Chepenko:2019}. Traduzido.}
     \label{fig:gradient_boosting}
 \end{figure}
  
-Para deixar mais claro a ideia do conceito de \textit{gradient descent} (gradiente descendente), Ben (\citeyear{Ben:2017}) apresenta o seguinte exemplo: uma função de perda (\textit{loss function}), L, capaz de calcular o erro de previsão total, se apresenta como na equação \eqref{lossFunction}.
+Para deixar mais clara a ideia do conceito de \textit{gradient descent} (gradiente descendente), Ben (\citeyear{Ben:2017}) apresenta o seguinte exemplo: uma função de perda (\textit{loss function}), \(L\), capaz de calcular o erro de previsão total, se apresenta como na equação \eqref{lossFunction}.
  
  \begin{equation}\label{lossFunction}L(x_1, x_2)=\frac{1}{2}(x_1-15)^2+\frac{1}{2}(x_2-25)^2\end{equation}
 
 O objetivo é encontrar o par \((x_1, x_2)\) que minimiza a função \(L\). Ela pode ser interpretada como calculando o erro ao quadrado para dois pontos de dados, 15 e 25, com dois valores de previsão, \(x_1\) e \(x_2\). Para essa função demonstrada acima é possível minimizá-la diretamente, mas o \textit{gradient descent} (gradiente descendente) nos permitirá minimizar funções de perda mais complicadas que não são possíveis de minimizar diretamente.
+
+Perante a proposta do presente trabalho, que refere-se a uma solução tecnológica para um problema ligado a um \textit{e-commerce} imobiliário, foram apresentados neste capitulo, além do contexto imobiliário, as principais abordagens utilizadas para construção de um sistema de recomendação.
+
+Para a construção da proposta a seguir, será necessário o entendimento de todo processo que refere-se a venda de imoveis online, além de todas as abordagens de recomendação apresentadas, seguido do uso de algoritmos de aprendizado de máquina, que proporcionam melhores soluções diante do contexto do presente trabalho.

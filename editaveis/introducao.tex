@@ -20,7 +20,7 @@ Existem diversas multinacionais que utilizam o mecanismo de recomendação em se
 
 Negócios populares e de grande porte como Netflix, Amazon, Ebay, Walmart, Costco, Spotify, Youtube e outros, são conhecidos pelos seus ótimos sistemas de recomendação. Tais empresas fazem grandes investimentos nesse tipo de tecnologia, com a finalidade de obter um retorno financeiro ainda maior \cite{Underwood:2017}.
 
-A empresa Netflix é uma provedora internacional de séries e filmes online e se destaca entre as empresas de mídias mais bem-sucedidas financeiramente da atualidade. Graças a sua enorme quantidade de dados, foi possível criar um mecanismo de recomendação muito eficiente, no qual 75 a 80 por cento de todo o conteúdo assistido é proveniente desse mecanismo, contra os 20 a 25 por cento assistidos que são oriundos de pesquisa \cite{Kleinman:2014}. O sistema de recomendação é tão relevante para essa empresa que ela criou um campeonato, o Netflix \textit{Prize}, em que o desafio era melhorar a qualidade da recomendação, sendo que a equipe vencedora “\textit{BellKor's Pragmatic Chaos}” melhorou em pouco mais de 10\% e recebeu um prêmio no valor de 1 milhão de dólares \cite{netflixprize:2009}.
+A empresa Netflix é uma provedora internacional de séries e filmes online e se destaca entre as empresas de mídias mais bem-sucedidas financeiramente da atualidade. Graças a sua enorme quantidade de dados, foi possível criar um mecanismo de recomendação muito eficiente, no qual 75 a 80 por cento de todo o conteúdo assistido é proveniente desse mecanismo, contra os 20 a 25 por cento assistidos que são oriundos de pesquisa \cite{Kleinman:2014}. O sistema de recomendação é tão relevante para essa empresa que ela criou um campeonato, o Netflix \textit{Prize} (Prêmio), em que o desafio era melhorar a qualidade da recomendação, sendo que a equipe vencedora “\textit{BellKor's Pragmatic Chaos}” melhorou em pouco mais de 10\% e recebeu um prêmio no valor de 1 milhão de dólares \cite{netflixprize:2009}.
 
 Com o crescente uso e prevalência da internet, os \textit{web services} se tornaram uma tendência. Empresas que necessitam vender seus produtos optam por utilizar plataformas virtuais, virtuais, ou como mais popularmente são conhecidos, os \textit{e-commerces}.
 
@@ -58,18 +58,17 @@ O processo de Mineração de Dados (\textit{Data Mining}), que é formado por di
 Os Sistemas de Recomendação correspondem a uma subárea do Aprendizado de Máquina (\textit{Machine Learning}), um campo da Ciência da Computação que consiste na investigação de como computadores podem aprender a partir de dados já armazenados. Sua principal área de pesquisa é em cima da aprendizagem automática de computadores, reconhecendo padrões complexos e tomando decisões inteligentes baseadas nos dados. De maneira mais ampla, os métodos e técnicas empregadas nesse tipo de processamento são provenientes da Inteligência Artificial, estando neste caso em particular compreendendo o Aprendizado de Máquina e a Mineração de Dados \cite{Han:2011:DMC:1972541}.
 
 \section{Objetivos}
-
+\label{section:objetivos}
 
 \subsection{Objetivo Geral}
-Esse trabalho tem como propósito criar um sistema robusto de recomendação para a plataforma \textit{web} Liva.vc. O software deve funcionar como um serviço capaz de consumir dados constantemente da plataforma e gerar recomendações inteligentes de propriedades aos usuários referente a suas características, preferências e ações na plataforma. Além disso, o sistema de recomendação deve apresentar, através de uma analise de dados, resultados que indicam uma melhor eficiência, comparado com o sistema já existente na plataforma.
+Esse trabalho tem como propósito criar um sistema robusto de recomendação para a plataforma disponível na \textit{web} Liva.vc. O software deve funcionar como um serviço capaz de consumir dados constantemente da plataforma e gerar recomendações inteligentes de propriedades aos usuários baseadas em suas preferências. Além disso, o sistema de recomendação deve apresentar, através de uma analise de dados, resultados que indicam uma melhor eficiência, comparado com o sistema já existente na plataforma.
 
 \subsection{Objetivos Específicos}
 
 \begin{itemize}
-    \item Realizar pesquisa bibliográfica, com a finalidade de obter o conhecimento necessário sobre abordagens de recomendação para desenvolvimento do projeto;
-    \item Implementar e implantar um protótipo seguindo abordagens de recomendação na plataforma Liva.vc, como uma simulação, a fim de provar a viabilidade do projeto;
-    \item Implementar um recomendador com abordagem baseada em Aprendizado de máquina, utilizando-se de dados advindos de ações do usuário na plataforma;
-    \item Implementar um recomendador com abordagem baseada em critica, com o uso e evolução da ferramenta de busca já existente na plataforma;
+    \item Coletar dados oriundos de ações do usuário na plataforma Liva.vc, com o fim de gerar um conjunto de dados inicial de treino para o modelo de aprendizado de máquina.
+    \item Desenvolver um recomendador utilizando-se de técnicas de aprendizado de máquina, contemplando abordagens de recomendações conhecidas;
+    \item Desenvolver um recomendador com uma abordagem baseada em críticas, em que o usuário será capaz de refinar sua preferência na ferramenta de busca a partir de suas críticas sobre propriedades.
     \item Analisar por meio de métricas de qualidade os resultados finais, com base nos dados gerados da implantação do novo sistema de recomendação na plataforma Liva.vc.
 \end{itemize}
 
@@ -82,7 +81,7 @@ Com o intuito de obter os conhecimentos necessários para realização da implem
 
 Como já explicitado, existem diversas empresas de prestação de serviços e vendas online que utilizam de sistemas de recomendações, implementados baseados em técnicas e tecnologias modernas, que em sua maioria são muito importantes por proporcionar recomendações relevantes de seus produtos para seus clientes, de forma a ser muito benéfico para o negócio. 
 
-Cada sistema de recomendação se adéqua ao seu contexto, como por exemplo, a Netflix tem um sistema de recomendação diferente da Amazon. O tipo de produto oferecido e a regra de negócio por trás de cada empresa gera diversos fatores determinantes em um sistema de recomendação. Um exemplo de fator em filmes que se difere de outros produtos seria em relação ao tempo em que uma avaliação foi feita pelos usuários, a nota que uma pessoa atribui para um filme tende a ser melhor caso ela tenha acabado de assistir-lo e mais moderado caso tenha assistido a um tempo atrás. Esse fator foi considerado pelo time campeão do Netflix \textit{Prize} (Prêmio) \cite{GARCIA:2015}.
+Cada sistema de recomendação se adéqua ao seu contexto, como por exemplo, a Netflix tem um sistema de recomendação diferente da Amazon. O tipo de produto oferecido e a regra de negócio por trás de cada empresa gera diversos fatores determinantes em um sistema de recomendação. Um exemplo de fator em filmes que se difere de outros produtos seria em relação ao tempo em que uma avaliação foi feita pelos usuários, a nota que uma pessoa atribui para um filme tende a ser melhor caso ela tenha acabado de assistir-lo e mais moderado caso tenha assistido a um tempo atrás. Esse fator foi considerado pelo time campeão do Netflix \textit{Prize} \cite{GARCIA:2015}.
  
  Dessa forma ao comparar técnicas, sistemas e tecnologias é possível identificar e analisar diversas informações, que possibilitam encontrar a melhor maneira de implementar um mecanismo de sugestão robusto ao contexto da Liva.
 
@@ -90,16 +89,16 @@ Cada sistema de recomendação se adéqua ao seu contexto, como por exemplo, a N
 
 A motivação deste trabalho parte do princípio que o atual sistema de recomendação de imóveis implementado na Liva não é embasado em nenhum tipo de abordagem para tal, apenas se baseia em buscas e filtros básicos de imóveis para o usuário, provocando assim, uma menor chance de encontrar o imóvel desejado e consequentemente perdas de possíveis clientes.
 
-Na maioria das vezes o usuário gasta muito tempo procurando e lendo várias páginas antes de achar um possível imóvel ideal para sua realidade. Dado que esse é um processo bastante trabalhoso, aumenta-se a possibilidade de desistência por parte do usuário. Ainda assim, existe também a possibilidade de usuários que entram em contato com o corretor não saberem se aquela residência é realmente o melhor para eles diante de sua realidade \cite{Summo:2017}.
+Na maioria das vezes o usuário gasta muito tempo procurando e lendo várias páginas antes de achar um possível imóvel ideal para sua realidade. Dado que esse é um processo bastante trabalhoso, aumenta-se a possibilidade de desistência por parte do usuário. Ainda assim, existe também a possibilidade de um usuário que entra em contato com o corretor, não saber se a residência de enfoque é realmente a melhor diante de sua realidade \cite{Summo:2017}.
 
-Como a plataforma online implementada na Liva contém uma quantidade considerável de dados de clientes e imóveis cadastrados, oriundos das seis imobiliárias que utilizam o serviço, é possível implementar um mecanismo de recomendação robusto que pode ajudar os usuários na parte de escolha de domicílio, diminuindo o tempo de busca, e também o estresse causado pelo grande esforço de procura necessário.
+Como a plataforma online implementada na Liva contém uma quantidade considerável de clientes ativos e imóveis cadastrados, oriundos das treze imobiliárias que utilizam o serviço, é possível implementar um mecanismo de recomendação robusto que pode ajudar os usuários na parte de escolha de domicílio, diminuindo o tempo de busca, e também o estresse causado pelo grande esforço de procura necessário.
 
-Com isso, é possível implementar um software de recomendação usando modelos bastante conhecidos nessa área, assim, aumentando a precisão de correspondência das residências com o perfil dos utilizadores do \textit{website}, ou seja, apresenta-se recomendações mais relevantes de acordo com os dados obtidos daquele cliente.
+Com isso, é possível implementar um software de recomendação usando abordagens bastante conhecidas nessa área, assim, aumentando a precisão de correspondência das residências com o perfil dos utilizadores do \textit{website}, ou seja, apresenta-se recomendações mais relevantes de acordo com os dados obtidos dos usuários.
 
 
 \section{Estrutura}
 
-Este trabalho de conclusão de curso está estruturado em seis capítulos. Segue a descrição breve de cada um abaixo:
+Este trabalho de conclusão de curso está estruturado em quatro capítulos. Segue a descrição breve de cada um abaixo:
 
 \begin{itemize}
     \item \textbf{Capítulo 1 - Introdução:} capítulo corrente, é apresentado o contexto em que o trabalho está inserido, os objetivos, a questão de pesquisa, a justificativa para a solução e o presente tópico, que é a estrutura e descrição de todos os capítulos;
